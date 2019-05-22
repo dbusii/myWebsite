@@ -1,0 +1,101 @@
+
+#nav{
+	position: relative;
+	margin: 2vw 2vw 0 2vw;
+}
+.myNav {
+	width : 1fr;
+	max-width: 25vw;
+	padding-left: 5vw;
+	display:inline-block;	
+	vertical-align:top;
+}
+
+.name, .github, .contact {
+	color:black;
+	font-family: helvetica;
+	font-size: 12px;	
+	display:inline-block;	
+}
+
+a {
+ text-decoration: none;
+}
+#myName{
+cursor: pointer;
+}
+
+#myContact{
+cursor: copy
+}
+
+
+.container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+margin: 0 4vw 0 4vw;
+}
+
+.container div {
+margin: 2vw;
+border: 1px white solid;
+}
+
+.container > div > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.container > div > iframe {
+min-height: 380px;
+width: 100%;
+height: 100%;
+}
+
+#left{
+cursor: url("images/Backwards.png"), auto;
+}
+
+#right{
+cursor: url("images/Forward.png"), auto;
+}
+
+span[copyEmail] {
+position: relative;
+text-decoration: none;
+cursor: copy;
+}
+
+span[copyEmail]:hover::after {
+content: attr(copyEmail);
+position: absolute;
+left: -12px;
+top: 14px;
+min-width: 200px;
+padding: 12px;
+color:goldenrod;
+font-family: helvetica;
+font-size: 12px;
+letter-spacing: 1px;
+z-index: 1;
+}
+
+span[desc] {
+position: relative;
+text-decoration: none;
+}
+
+span[desc]:hover::after {
+content: attr(desc);
+position: absolute;
+left: -12px;
+top: 14px;
+min-width: 200px;
+padding: 12px;
+color:goldenrod;
+font-family: helvetica;
+font-size: 12px;
+letter-spacing: 1px;
+z-index: 1;
+}

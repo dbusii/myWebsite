@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>utm Generator</title>
+	<meta charset="utf-8">
+    <script type="text/javascript" src="utmScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="utmStyle.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="typeInput">
+		<input type="text" id="inputSource" value="Enter Source" onfocus="this.value=''">
+	</div>
+	<div class="typeInput">
+		<input type="text" id="inputMedium" value="Enter Medium" onfocus="this.value=''">
+	</div>
+	<div class="typeInput">
+		<input type="text" id="inputCampaign" value="Enter Campaign" onfocus="this.value=''">
+	</div>
+	<div>
+		<button id="genButton" onclick="genUtm()">Generate UTM</button>
+	</div>
+	<div>
+		<button id="copyButton" onclick="copyUtm()">Copy UTM</button>
+	</div>
+	<div class="typeInput">
+		<input type="text" id="inputUtm" onclick="copyUtm()">
+	</div>
+</div>
+
+</body>
+</html>

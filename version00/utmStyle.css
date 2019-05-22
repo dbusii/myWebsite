@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat( 5, 1fr);
+    grid-gap: 0.5rem;
+    height: 96vh;
+    }
+    
+    .typeInput, .typeOutput, .results{
+    grid-column: 1 / 3;
+    padding-right: 15px;
+    }
+    
+    #genButton{
+    grid-column: 1/2;
+    }
+    
+    #copyButton{
+    grid-column: 2/3;
+    }
+    
+    input, button{
+    padding-left: 1rem;
+    border: none;
+    background-color: #f1f1f1;
+    width: 100%;
+    height:100%;
+    font-size: 1rem;
+    font-family: calibri;
+    border-radius: 1vh;
+    }
+    
+    input:hover{
+    background-color: #e6e6e6;	
+    }
+    
+    button{
+    background-color:lightgray;
+    }
+    
+    button:hover{
+    background-color: #c6c6c6; 
+    cursor: pointer;
+    }
+    
+    #inputUtm{
+    background-color: #9ed2fa;
+    }
+    
+    #inputUtm:hover{
+    background-color: #82bded;
+    cursor: pointer;
+    }
