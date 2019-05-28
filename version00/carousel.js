@@ -40,18 +40,19 @@ images1[0] = "images/taxiPlusRollUp.jpg"
 images1[1] = "images/taxiPlus.jpg"
 images1[2] = "images/tPlus.jpg"
 images1[3] = "images/taxiPlusLetterHead.jpg"
+images1[4] = "images/taxiPlusEmail.jpg"
 
 //slide 2
 images2[0] = "images/pcSafeguarding.gif"
 images2[1] = "images/pc.jpg"
-images2[2] = "images/pcMobileConcept.jpg"
-images2[3] = "images/pcTensar.jpg"
-images2[4] = "images/pcFB.jpg"
+images2[2] = "images/pcTensar.jpg"
+images2[3] = "images/pcCertificate.jpg"
+images2[4] = "images/pcEmail.jpg"
 
 //slide 3
-images3[0] = "images/ukbInsta.jpg"
+images3[0] = "images/ukbTshirt.jpg"
 images3[1] = "images/UKB.jpg"
-
+images3[2] = "images/UKBPhone.jpg"
 
 //slide 4
 images4[0] = "images/sfeBag.jpg"
@@ -59,29 +60,31 @@ images4[1] = "images/SFE.jpg"
 images4[2] = "images/sfeType.jpg"
 images4[3] = "images/sfeLoyalty.jpg"
 images4[4] = "images/sfeMenu.jpg"
-
+images4[5] = "images/soulFoodPoster.jpg"
 
 //slide 5
 images5[0] = "images/armadaLanyard.jpg"
 images5[1] = "images/armada.jpg"
 images5[2] = "images/armadaIcon.jpg"
+images5[2] = "images/armadaWebsite.jpg"
 
 //slide 6
 images6[0] = "images/switch.jpg"
 images6[1] = "images/ifixit.jpg"
 
 //slide 7
-images7[0] = "images/hgmHoodie.jpg"
-images7[1] = "images/HandGMotorcyles.jpg"
-images7[2] = "images/HGM.jpg"
-images7[3] = "images/hgmBC.jpg"
-
+images7[0] = "images/eotf.jpg"
+images7[1] = "images/marketIndex.jpg"
+images7[2] = "images/mcDonaldsFlyer.jpg"
+images7[3] = "images/rmhcFlyer.jpg"
 
 //slide 8
-images8[0] = "images/eotf.jpg"
-images8[1] = "images/marketIndex.jpg"
-images8[2] = "images/mcDonaldsFlyer.jpg"
-images8[3] = "images/rmhcFlyer.jpg"
+images8[0] = "images/hgmHoodie.jpg"
+images8[1] = "images/HandGMotorcyles.jpg"
+images8[2] = "images/HGM.jpg"
+images8[3] = "images/hgmBC.jpg"
+
+
 
 
 //change image

@@ -52,11 +52,11 @@ object-fit: cover;
 }
 
 #left{
-cursor: url("images/Backwards.png"), auto;
+cursor: url("images/Backwards.png"), pointer;
 }
 
 #right{
-cursor: url("images/Forward.png"), auto;
+cursor: url("images/Forward.png"), pointer;
 }
 
 span[copyEmail] {
