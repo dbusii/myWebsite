@@ -46,8 +46,7 @@ images1[4] = "images/taxiPlusEmail.jpg"
 images2[0] = "images/pcSafeguarding.gif"
 images2[1] = "images/pc.jpg"
 images2[2] = "images/pcTensar.jpg"
-images2[3] = "images/pcCertificate.jpg"
-images2[4] = "images/pcEmail.jpg"
+images2[3] = "images/pcEmail.jpg"
 
 //slide 3
 images3[0] = "images/ukbTshirt.jpg"
@@ -66,11 +65,12 @@ images4[5] = "images/soulFoodPoster.jpg"
 images5[0] = "images/armadaLanyard.jpg"
 images5[1] = "images/armada.jpg"
 images5[2] = "images/armadaIcon.jpg"
-images5[2] = "images/armadaWebsite.jpg"
+images5[3] = "images/armadaWebsite.jpg"
 
 //slide 6
-images6[0] = "images/switch.jpg"
+images6[0] = "images/ifixitEmail.jpg"
 images6[1] = "images/ifixit.jpg"
+images6[2] = "images/ifixitBanner.jpg"
 
 //slide 7
 images7[0] = "images/eotf.jpg"
