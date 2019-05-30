@@ -43,34 +43,35 @@ images1[3] = "images/taxiPlusLetterHead.jpg"
 images1[4] = "images/taxiPlusEmail.jpg"
 
 //slide 2
-images2[0] = "images/pcSafeguarding.gif"
-images2[1] = "images/pc.jpg"
-images2[2] = "images/pcTensar.jpg"
-images2[3] = "images/pcEmail.jpg"
+images2[0] = "images/ifixitEmail.jpg"
+images2[1] = "images/ifixit.jpg"
+images2[2] = "images/ifixitBanner.jpg"
+images2[3] = "images/ifixitBusinessCard.jpg"
 
 //slide 3
-images3[0] = "images/ukbTshirt.jpg"
-images3[1] = "images/UKB.jpg"
-images3[2] = "images/UKBPhone.jpg"
+images3[0] = "images/pcSafeguarding.gif"
+images3[1] = "images/pc.jpg"
+images3[2] = "images/pcEmail.jpg"
+
 
 //slide 4
-images4[0] = "images/sfeBag.jpg"
-images4[1] = "images/SFE.jpg"
-images4[2] = "images/sfeType.jpg"
-images4[3] = "images/sfeLoyalty.jpg"
-images4[4] = "images/sfeMenu.jpg"
-images4[5] = "images/soulFoodPoster.jpg"
+images4[0] = "images/ukbTshirt.jpg"
+images4[1] = "images/UKB.jpg"
+images4[2] = "images/UKBPhone.jpg"
 
 //slide 5
-images5[0] = "images/armadaLanyard.jpg"
+images5[0] = "images/armadaWebsite.jpg"
 images5[1] = "images/armada.jpg"
 images5[2] = "images/armadaIcon.jpg"
-images5[3] = "images/armadaWebsite.jpg"
+images5[3] = "images/armadaBanner.jpg"
 
 //slide 6
-images6[0] = "images/ifixitEmail.jpg"
-images6[1] = "images/ifixit.jpg"
-images6[2] = "images/ifixitBanner.jpg"
+images6[0] = "images/sfeBag.jpg"
+images6[1] = "images/SFE.jpg"
+images6[2] = "images/sfeType.jpg"
+images6[3] = "images/sfeLoyalty.jpg"
+images6[4] = "images/sfeMenu.jpg"
+images6[5] = "images/soulFoodPoster.jpg"
 
 //slide 7
 images7[0] = "images/eotf.jpg"
