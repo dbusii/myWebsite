@@ -52,11 +52,13 @@ object-fit: cover;
 }
 
 #left{
-cursor: url("images/Backwards.png"), pointer;
+	cursor: url("images/Backwards.cur"); 
+	cursor: url("images/Backwards.gif") 4 12, pointer; 	
 }
 
-#right{
-cursor: url("images/Forward.png"), pointer;
+#right{ 
+	cursor: url("images/Forward.cur"); 
+	cursor: url("images/Forward.gif") 4 12, pointer;
 }
 
 span[copyEmail] {
@@ -76,5 +78,4 @@ color:goldenrod;
 font-family: helvetica;
 font-size: 12px;
 letter-spacing: 1px;
-z-index: 1;
 }

@@ -68,11 +68,13 @@ images5[2] = "images/sfeType.jpg"
 images5[3] = "images/sfeLoyalty.jpg"
 images5[4] = "images/sfeMenu.jpg"
 images5[5] = "images/soulFoodPoster.jpg"
+
 //slide 6
 images6[0] = "images/eotf.jpg"
 images6[1] = "images/marketIndex.jpg"
 images6[2] = "images/mcDonaldsFlyer.jpg"
 images6[3] = "images/rmhcFlyer.jpg"
+
 
 //slide 7
 images7[0] = "images/hgmHoodie.jpg"
