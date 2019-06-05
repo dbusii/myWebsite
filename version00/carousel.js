@@ -40,7 +40,9 @@ images1[0] = "images/taxiPlusRollUp.jpg"
 images1[1] = "images/taxiPlus.jpg"
 images1[2] = "images/tPlus.jpg"
 images1[3] = "images/taxiPlusLetterHead.jpg"
-images1[4] = "images/taxiPlusEmail.jpg"
+images1[4] = "images/taxiPlusEmailConfirmation.jpg"
+images1[5] = "images/taxiPlusEmail.jpg"
+
 
 //slide 2
 images2[0] = "images/ifixitEmail.jpg"
@@ -49,10 +51,10 @@ images2[2] = "images/ifixitBanner.jpg"
 images2[3] = "images/ifixitBusinessCard.jpg"
 
 //slide 3
-images3[0] = "images/pcSafeguarding.gif"
-images3[1] = "images/pc.jpg"
-images3[2] = "images/pcEmail.jpg"
-
+images3[0] = "images/armadaWebsite.jpg"
+images3[1] = "images/armada.jpg"
+images3[2] = "images/armadaIcon.jpg"
+images3[3] = "images/armadaBanner.jpg"
 
 //slide 4
 images4[0] = "images/ukbTshirt.jpg"
@@ -60,33 +62,23 @@ images4[1] = "images/UKB.jpg"
 images4[2] = "images/UKBPhone.jpg"
 
 //slide 5
-images5[0] = "images/armadaWebsite.jpg"
-images5[1] = "images/armada.jpg"
-images5[2] = "images/armadaIcon.jpg"
-images5[3] = "images/armadaBanner.jpg"
-
+images5[0] = "images/sfeBag.jpg"
+images5[1] = "images/SFE.jpg"
+images5[2] = "images/sfeType.jpg"
+images5[3] = "images/sfeLoyalty.jpg"
+images5[4] = "images/sfeMenu.jpg"
+images5[5] = "images/soulFoodPoster.jpg"
 //slide 6
-images6[0] = "images/sfeBag.jpg"
-images6[1] = "images/SFE.jpg"
-images6[2] = "images/sfeType.jpg"
-images6[3] = "images/sfeLoyalty.jpg"
-images6[4] = "images/sfeMenu.jpg"
-images6[5] = "images/soulFoodPoster.jpg"
+images6[0] = "images/eotf.jpg"
+images6[1] = "images/marketIndex.jpg"
+images6[2] = "images/mcDonaldsFlyer.jpg"
+images6[3] = "images/rmhcFlyer.jpg"
 
 //slide 7
-images7[0] = "images/eotf.jpg"
-images7[1] = "images/marketIndex.jpg"
-images7[2] = "images/mcDonaldsFlyer.jpg"
-images7[3] = "images/rmhcFlyer.jpg"
-
-//slide 8
-images8[0] = "images/hgmHoodie.jpg"
-images8[1] = "images/HandGMotorcyles.jpg"
-images8[2] = "images/HGM.jpg"
-images8[3] = "images/hgmBC.jpg"
-
-
-
+images7[0] = "images/hgmHoodie.jpg"
+images7[1] = "images/HandGMotorcyles.jpg"
+images7[2] = "images/HGM.jpg"
+images7[3] = "images/hgmBC.jpg"
 
 //change image
 
@@ -171,7 +163,7 @@ function changeImgLeft4(){
 
     if (i4<=images4.length - 1 && i4 > 0){
      i4--        
-    }else {
+     }else {
      i4 = images4.length - 1
     }
     document.slide4.src = images4[i4]
@@ -242,26 +234,4 @@ function changeImgLeft7(){
     }
     document.slide7.src = images7[i7]
     console.log(i7)
-}
-
-//slide 8
-function changeImgRight8(){
-
-    if (i8<images8.length - 1){
-     i8++        
-    }else {
-     i8 = 0
-    }
-    document.slide8.src = images8[i8]    
-    console.log(i8)
-}
-function changeImgLeft8(){
-
-    if (i8<=images8.length - 1 && i8 > 0){
-     i8--        
-    }else {
-     i8 = images8.length - 1
-    }
-    document.slide8.src = images8[i8]
-    console.log(i8)
 }
