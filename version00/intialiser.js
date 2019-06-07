@@ -18,7 +18,6 @@ changeImgRight3()
 changeImgRight4()
 changeImgRight5()
 changeImgRight6()
-changeImgRight7()
 
 //get email	
     document.getElementById('myContact').addEventListener("click", function () { 

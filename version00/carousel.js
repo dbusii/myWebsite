@@ -51,15 +51,16 @@ images2[2] = "images/ifixitBanner.jpg"
 images2[3] = "images/ifixitBusinessCard.jpg"
 
 //slide 3
-images3[0] = "images/armadaWebsite.jpg"
-images3[1] = "images/armada.jpg"
-images3[2] = "images/armadaIcon.jpg"
-images3[3] = "images/armadaBanner.jpg"
+images3[0] = "images/hgmHoodie.jpg"
+images3[1] = "images/HandGMotorcyles.jpg"
+images3[2] = "images/HGM.jpg"
+images3[3] = "images/hgmBC.jpg"
 
 //slide 4
 images4[0] = "images/ukbTshirt.jpg"
 images4[1] = "images/UKB.jpg"
 images4[2] = "images/UKBPhone.jpg"
+images4[3] = "images/ukbSticker.jpg"
 
 //slide 5
 images5[0] = "images/sfeBag.jpg"
@@ -74,13 +75,6 @@ images6[0] = "images/eotf.jpg"
 images6[1] = "images/marketIndex.jpg"
 images6[2] = "images/mcDonaldsFlyer.jpg"
 images6[3] = "images/rmhcFlyer.jpg"
-
-
-//slide 7
-images7[0] = "images/hgmHoodie.jpg"
-images7[1] = "images/HandGMotorcyles.jpg"
-images7[2] = "images/HGM.jpg"
-images7[3] = "images/hgmBC.jpg"
 
 //change image
 
@@ -214,26 +208,4 @@ function changeImgLeft6(){
     }
     document.slide6.src = images6[i6]
     console.log(i6)
-}
-
-//slide 7
-function changeImgRight7(){
-
-    if (i7<images7.length - 1){
-     i7++        
-    }else {
-     i7 = 0
-    }
-    document.slide7.src = images7[i7]    
-    console.log(i7)
-}
-function changeImgLeft7(){
-
-    if (i7<=images7.length - 1 && i7 > 0){
-     i7--        
-    }else {
-     i7 = images7.length - 1
-    }
-    document.slide7.src = images7[i7]
-    console.log(i7)
 }
