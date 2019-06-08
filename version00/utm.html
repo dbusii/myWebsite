@@ -3,8 +3,8 @@
 <head>
 	<title>utm Generator</title>
 	<meta charset="utf-8">
-    <script type="text/javascript" src="utmScript.js"></script>
-	<link rel="stylesheet" type="text/css" href="utmStyle.css">
+	<script type="text/javascript" src="utmscript.js"></script>
+	<link rel="stylesheet" type="text/css" href="utmstyle.css">
 </head>
 <body>
 
@@ -18,16 +18,20 @@
 	<div class="typeInput">
 		<input type="text" id="inputCampaign" value="Enter Campaign" onfocus="this.value=''">
 	</div>
-	<div>
+	<div class="buts">
 		<button id="genButton" onclick="genUtm()">Generate UTM</button>
 	</div>
-	<div>
+	<div class="buts">
 		<button id="copyButton" onclick="copyUtm()">Copy UTM</button>
 	</div>
-	<div class="typeInput">
+	<div class="typeOutput">
 		<input type="text" id="inputUtm" onclick="copyUtm()">
+	</div>
+	<div class="results">
+		<p id="myList"></p>
 	</div>
 </div>
 
 </body>
 </html>
+

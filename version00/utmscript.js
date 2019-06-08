@@ -11,6 +11,13 @@ const myCampaign = document.getElementById("inputCampaign").value;
 document.getElementById("inputUtm").innerhtml ="this.value=''";
 document.getElementById("inputUtm").value = ("?utm_source=" + mySource + "&utm_medium=" + myMedium  +  "&utm_campaign="+ myCampaign);
 
+//Creates List of previously generated UTMS
+const node = document.createElement("P");
+node.innerHTML = ("?utm_source=" + mySource + "&utm_medium=" + myMedium  +  "&utm_campaign="+ myCampaign);
+document.getElementById('myList').appendChild(node);
+
+
+
 }
 
 function copyUtm(){
