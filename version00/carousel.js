@@ -55,6 +55,7 @@ images3[0] = "images/hgmHoodie.jpg"
 images3[1] = "images/HandGMotorcyles.jpg"
 images3[2] = "images/HGM.jpg"
 images3[3] = "images/hgmBC.jpg"
+images3[4] = "images/hgmBanner.jpg"
 
 //slide 4
 images4[0] = "images/ukbTshirt.jpg"
