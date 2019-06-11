@@ -1,17 +1,21 @@
 
-#nav{
-	position: relative;
-	margin: 2vw 2vw 0 2vw;
+/*Navigation*/
+
+.nav{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,110px));
+	margin: 1.5vw 4vw 0vw 4vw;
+	height: 100px;
 }
 .myNav {
 	width : 1fr;
 	max-width: 25vw;
-	padding-left: 5vw;
 	display:inline-block;	
 	vertical-align:top;
+
 }
 
-.name, .github, .contact {
+.github, .contact, .about, .design {
 	color:black;
 	font-family: helvetica;
 	font-size: 12px;	
@@ -21,9 +25,7 @@
 a {
  text-decoration: none;
 }
-#myName{
-cursor: pointer;
-}
+
 
 #myContact{
 cursor: copy
@@ -33,7 +35,6 @@ cursor: copy
 .container {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
 margin: 0 4vw 0 4vw;
 }
 

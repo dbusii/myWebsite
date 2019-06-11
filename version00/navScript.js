@@ -1,141 +1,269 @@
+//github timers
+let githubTimer1 = setInterval(githubGGen, 10);
+let githubTimer2 = setInterval(githubIGen, 10);
+let githubTimer3 = setInterval(githubTGen, 10);
+let githubTimer4 = setInterval(githubHGen, 10);
+let githubTimer5 = setInterval(githubUGen, 10);
+let githubTimer6 = setInterval(githubBGen, 10);
 
-let timer1 = setInterval(gGen, 10);
-let timer2 = setInterval(iiGen, 10);
-let timer3 = setInterval(tGen, 10);
-let timer4 = setInterval(hGen, 10);
-let timer5 = setInterval(uGen, 10);
-let timer6 = setInterval(bGen, 10);
-let timer7 = setInterval(cGen, 10);
-let timer8 = setInterval(oGen, 10);
-let timer9 = setInterval(nnGen, 10);
-let timer10 = setInterval(ttGen, 10);
-let timer11 = setInterval(aaGen, 10);
-let timer12 = setInterval(ccGen, 10);
-let timer13 = setInterval(tttGen, 10);
-let makeInputContact; 
+//design timers
+let designTimer1 = setInterval(designDGen, 10);
+let designTimer2 = setInterval(designEGen, 10);
+let designTimer3 = setInterval(designSGen, 10);
+let designTimer4 = setInterval(designIGen, 10);
+let designTimer5 = setInterval(designGGen, 10);
+let designTimer6 = setInterval(designNGen, 10);
+
+//about timers
+let aboutTimer1 = setInterval(aboutAGen, 10);
+let aboutTimer2 = setInterval(aboutBGen, 10);
+let aboutTimer3 = setInterval(aboutOGen, 10);
+let aboutTimer4 = setInterval(aboutUGen, 10);
+let aboutTimer5 = setInterval(aboutTGen, 10);
+
+//contact timers
+let contactTimer1 = setInterval(contactCGen, 10);
+let contactTimer2 = setInterval(contactOGen, 10);
+let contactTimer3 = setInterval(contactNGen, 10);
+let contactTimer4 = setInterval(contactTGen, 10);
+let contactTimer5 = setInterval(contactAGen, 10);
+let contactTimer6 = setInterval(contactSecondCGen, 10);
+let contactTimer7 = setInterval(contactSecondTGen, 10);
+
 let makeInputGit; 
-let makeInput; 
+let makeInputDesign; 
+let makeInputAbout;
+let makeInputContact;
 
-	function gGen(){
+
+
+//start of design generator
+function designDGen(){
+	let makeInputDesign = document.getElementById('designFirstLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2,3);
+
+	if (document.getElementById('designFirstLetter').innerHTML === "d") {
+	clearInterval(designTimer1);
+	}
+
+}
+
+function designEGen(){
+let makeInputDesign = document.getElementById('designSecondLetter') 
+	makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+	if (document.getElementById('designSecondLetter').innerHTML === "e") {
+	clearInterval(designTimer2);
+}
+}
+
+function designSGen(){
+	let makeInputDesign = document.getElementById('designThirdLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('designThirdLetter').innerHTML === "s") {
+		clearInterval(designTimer3);
+}
+}
+
+function designIGen(){
+	let makeInputDesign = document.getElementById('designFourthLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('designFourthLetter').innerHTML === "i") {
+		clearInterval(designTimer4);
+}
+}
+
+function designGGen(){
+	let makeInputDesign = document.getElementById('designFifthLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('designFifthLetter').innerHTML === "g") {
+		clearInterval(designTimer5);
+}
+}
+
+function designNGen(){
+	let makeInputDesign = document.getElementById('designSixthLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('designSixthLetter').innerHTML === "n") {
+		clearInterval(designTimer6);
+}
+}
+//end of design generator
+
+//github generator
+	function githubGGen(){
 				let makeInputGit = document.getElementById('githubFirstLetter') 
 					makeInputGit.innerHTML = Math.random().toString(36).substring(2,3);
 
 				if (document.getElementById('githubFirstLetter').innerHTML === "g") {
-				clearInterval(timer1);
+				clearInterval(githubTimer1);
 				}
 
 			}
 
 
-	function iiGen(){
+	function githubIGen(){
 			let makeInputGit = document.getElementById('githubSecondLetter') 
 				makeInputGit.innerHTML = Math.random().toString(36).substring(2, 3);
 
 				if (document.getElementById('githubSecondLetter').innerHTML === "i") {
-				clearInterval(timer2);
+				clearInterval(githubTimer2);
 		}
 	}
 
-	function tGen(){
+	function githubTGen(){
 				let makeInputGit = document.getElementById('githubThirdLetter') 
 					makeInputGit.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('githubThirdLetter').innerHTML === "t") {
-					clearInterval(timer3);
+					clearInterval(githubTimer3);
 			}
 		}
 
-	function hGen(){
+	function githubHGen(){
 				let makeInputGit = document.getElementById('githubFourthLetter') 
 					makeInputGit.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('githubFourthLetter').innerHTML === "h") {
-					clearInterval(timer4);
+					clearInterval(githubTimer4);
 			}
 		}
 
-	function uGen(){
+	function githubUGen(){
 				let makeInputGit = document.getElementById('githubFifthLetter') 
 					makeInputGit.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('githubFifthLetter').innerHTML === "u") {
-					clearInterval(timer5);
+					clearInterval(githubTimer5);
 			}
 		}
 
-	function bGen(){
+	function githubBGen(){
 				let makeInputGit = document.getElementById('githubSixthLetter') 
 					makeInputGit.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('githubSixthLetter').innerHTML === "b") {
-					clearInterval(timer6);
+					clearInterval(githubTimer6);
 			}
 		}
+//end of github generators
 
-	function cGen(){
+//start of about generator
+function aboutAGen(){
+	let makeInputDesign = document.getElementById('aboutFirstLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2,3);
+
+	if (document.getElementById('aboutFirstLetter').innerHTML === "a") {
+	clearInterval(aboutTimer1);
+	}
+
+}
+
+function aboutBGen(){
+let makeInputDesign = document.getElementById('aboutSecondLetter') 
+	makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+	if (document.getElementById('aboutSecondLetter').innerHTML === "b") {
+	clearInterval(aboutTimer2);
+}
+}
+
+function aboutOGen(){
+	let makeInputDesign = document.getElementById('aboutThirdLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('aboutThirdLetter').innerHTML === "o") {
+		clearInterval(aboutTimer3);
+}
+}
+
+function aboutUGen(){
+	let makeInputDesign = document.getElementById('aboutFourthLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('aboutFourthLetter').innerHTML === "u") {
+		clearInterval(aboutTimer4);
+}
+}
+
+function aboutTGen(){
+	let makeInputDesign = document.getElementById('aboutFifthLetter') 
+		makeInputDesign.innerHTML = Math.random().toString(36).substring(2, 3);
+
+		if (document.getElementById('aboutFifthLetter').innerHTML === "t") {
+		clearInterval(aboutTimer5);
+}
+}
+//end of about generator
+
+//start of contact generators
+	function contactCGen(){
 				let makeInputContact = document.getElementById('contactFirstLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2,3);
 
 				if (document.getElementById('contactFirstLetter').innerHTML === "c") {
-				clearInterval(timer7);
+				clearInterval(contactTimer1);
 				}
 
 			}
 
 
-	function oGen(){
+	function contactOGen(){
 			let makeInputContact = document.getElementById('contactSecondLetter') 
 				makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 				if (document.getElementById('contactSecondLetter').innerHTML === "o") {
-				clearInterval(timer8);
+				clearInterval(contactTimer2);
 		}
 	}
 
-	function nnGen(){
+	function contactNGen(){
 				let makeInputContact = document.getElementById('contactThirdLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('contactThirdLetter').innerHTML === "n") {
-					clearInterval(timer9);
+					clearInterval(contactTimer3);
 			}
 		}
 
-	function ttGen(){
+	function contactTGen(){
 				let makeInputContact = document.getElementById('contactFourthLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('contactFourthLetter').innerHTML === "t") {
-					clearInterval(timer10);
+					clearInterval(contactTimer4);
 			}
 		}
 
-	function aaGen(){
+	function contactAGen(){
 				let makeInputContact = document.getElementById('contactFifthLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('contactFifthLetter').innerHTML === "a") {
-					clearInterval(timer11);
+					clearInterval(contactTimer5);
 			}
 		}
 
-	function ccGen(){
+	function contactSecondCGen(){
 				let makeInputContact = document.getElementById('contactSixthLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('contactSixthLetter').innerHTML === "c") {
-					clearInterval(timer12);
+					clearInterval(contactTimer6);
 			}
 		}
 
-	function tttGen(){
+	function contactSecondTGen(){
 				let makeInputContact = document.getElementById('contactSeventhLetter') 
 					makeInputContact.innerHTML = Math.random().toString(36).substring(2, 3);
 
 					if (document.getElementById('contactSeventhLetter').innerHTML === "t") {
-					clearInterval(timer13);
+					clearInterval(contactTimer7);
 			}
 		}
-		
-
+// end of contact generators
 

@@ -1,16 +1,74 @@
-#nav{
-	position: relative;
-	margin: 2vw 2vw 0 2vw;
+/*Index page*/
+body{
+	font-family: helvetica, sans-serif;
+	cursor: default;
+	}
+	
+	h1{
+		font-size: calc(2.5em + 2vw);
+		line-height:calc(1em + 1vw);
+		font-weight: normal;
+	
+	}
+	h1 > a{
+		text-decoration: none;
+		color: black;
+	}
+	h2 > a{
+		text-decoration: none;
+		color: black;
+	}
+	h1 > a:hover{
+		border-bottom: 6px solid yellow;
+
+	}
+	h2 > a:hover{
+		border-bottom: 6px solid yellow;
+
+	}
+	h2{
+		font-size: calc(1em + 2vw);
+		line-height:calc(1em + 1vw);
+		font-weight:lighter;
+		margin: 0;
+	}
+
+/*Index Page container*/
+	.indexContainer {
+		display: grid;
+		grid-template-columns:3fr 1fr;
+		margin: 6vw 4vw 0 4vw;
+
+		}
+	.indexContainer_Name{
+		padding-top: 20px;
+		grid-column: 1/2;
+	}
+	.indexContainer_Desc{
+		grid-column: 1/2;
+	}
+	.indexContainer_Contact{
+		grid-column: 1/2;
+	}
+
+
+/*Navigation*/
+
+.nav{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,110px));
+	margin: 2vw 4vw 0vw 4vw;
+
 }
 .myNav {
 	width : 1fr;
 	max-width: 25vw;
-	padding-left: 5vw;
 	display:inline-block;	
 	vertical-align:top;
+
 }
 
-.github, .contact {
+.github, .contact, .about, .design {
 	color:black;
 	font-family: helvetica;
 	font-size: 12px;	
@@ -26,6 +84,9 @@ a {
 cursor: copy
 }
 
+/*
+#Containter
+*/
 
 .container {
 display: grid;
@@ -74,8 +135,8 @@ left: -12px;
 top: 14px;
 min-width: 200px;
 padding: 12px;
-color:goldenrod;
-font-family: helvetica;
+color:black;
+font-family: helvetica, sans-serif;
 font-size: 12px;
 letter-spacing: 1px;
 }

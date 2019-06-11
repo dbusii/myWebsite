@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Design work</title>
 	<meta charset="utf-8">
-	<title>Hi</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/duck.ico"/>
+	<link rel="stylesheet" media="screen and (min-width: 600px)" href="style.css" />
+	<link rel="stylesheet" media="screen and (max-width: 599px)" href="styleMobile.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/duck.ico"/>
 </head>
+
 <body>
 
+        
         <div class="nav">
                 <div class="myNav" id="myAbout"> 
                         <a href="index.html">
@@ -53,14 +56,68 @@
         </div>
     
 
-    <div class="indexContainer">
-        <h1 class="indexContainer_Name"><strong>Daniel Birkett</strong> <br>  <a href="https://github.com/dbusii/" target="_blank">Developer</a> &  <a href="design.html">Designer</a></h1>
-        <h2 class="indexContainer_Desc">I like to build cool things that look good.</h2>
-        <h2 class="indexContainer_Contact"><a href="mailto:dtbirkett@gmail.com?Subject=Hey%20Danny" target="_top">dtbirkett@gmail.com</a> <br> +44(0)7802577924</h2>
-    </div>
+	<div class="container">
+		
 
-<script src="navScript.js"></script>
-<script src="carousel.js"></script>
-<script src="intialiser.js"></script>
+			<div class="containerCarousel" >	
+				<img name="slide1" width="400" height="400" usemap="#navit">
+				<map name ="navit">
+					<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight1()">	
+					<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft1()">	
+				</map>
+			</div>
+
+			<div class="containerCarousel">	
+				<img name="slide2" width="400" height="400" usemap="#navit2">
+				<map name ="navit2">
+					<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight2()">	
+					<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft2()">	
+				</map>
+			</div>
+
+			<div class="containerCarousel">	
+				<img name="slide3" width="400" height="400" usemap="#navit3">
+				<map name ="navit3">
+					<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight3()">	
+					<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft3()">	
+				</map>
+			</div>
+
+			<div class="containerCarousel">	
+				<img name="slide4" width="400" height="400" usemap="#navit4">
+				<map name ="navit4">
+					<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight4()">	
+					<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft4()">	
+				</map>
+			</div>
+
+			<div class="containerCarousel">	
+					<img name="slide5" width="400" height="400" usemap="#navit5">
+					<map name ="navit5">
+						<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight5()">	
+						<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft5()">	
+					</map>
+			</div>
+			<div class="containerCarousel">	
+					<img name="slide6" width="400" height="400" usemap="#navit6">
+					<map name ="navit6">
+						<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight6()">	
+						<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft6()">	
+					</map>
+			</div>
+
+		<!--
+		<div><iframe src="calcIndex.html" frameBorder="0"></iframe> </div>
+		<div><iframe src="utmIndex.html" frameBorder="0"></iframe> </div>
+		-->
+	</div>
+
+	<script src="navScript.js"></script>
+	<script src="carousel.js"></script>
+	<script src="intialiser.js"></script>
+	<script src="image-map.min.js"></script>
+
+</body>
 </body>
 </html>
+
