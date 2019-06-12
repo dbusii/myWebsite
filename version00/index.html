@@ -39,7 +39,7 @@
                             <p class="design" id="designSixthLetter">!</p> 
                         </a>
                     </div>
-                <div class="myNav" id="myContact">  
+                <div class="myNav" id="myContact" onclick="emailScript()">  
                         <span copyEmail="click to copy email">
                             <p class="contact" id="contactFirstLetter">h</p> 
                             <p class="contact" id="contactSecondLetter">e</p> 
@@ -49,9 +49,22 @@
                             <p class="contact" id="contactSixthLetter">!</p> 
                             <p class="contact" id="contactSeventhLetter"></p> 
                         </span>
-                    </div>
+                </div>
         </div>
-    
+
+        <div class="myMenuIcon" onclick="subMenu()"><img name="menuImg" src="images/menu.png" width="25px"></div>
+        <div class="subMenu" id="mySubMenu">
+                <ul class="subMenuList">
+                    <a href="index.html"><li>about</li> </a>
+                    <a href="https://github.com/dbusii/" target="_blank"><li>github</li></a>
+                    <a href="design.html"><li>design</li></a>
+                    <a href="mailto:dtbirkett@gmail.com?Subject=Hey%20Danny" target="_top"><li>contact</li></a> 
+                </ul> 
+        </div>
+
+
+
+
 
     <div class="indexContainer">
         <h1 class="indexContainer_Name"><strong>Daniel Birkett</strong> <br>  <a href="https://github.com/dbusii/" target="_blank">Developer</a> &  <a href="design.html">Designer</a></h1>
@@ -60,7 +73,8 @@
     </div>
 
 <script src="navScript.js"></script>
-<script src="carousel.js"></script>
-<script src="intialiser.js"></script>
+<script src="menuScript.js"></script>
+<script src="emailScript.js"></script>
+
 </body>
 </html>
