@@ -28,10 +28,15 @@
 			visibility: visible;
 			z-index: 1;
 	}
-	.github, .contact, .about, .design{
-			visibility: hidden;
-	}	
+	.myNav{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+
+	}
 }
+
+
 /*End of icon navigation mobile*/
 
 /*Mobile menu on click stuff*/
@@ -64,23 +69,36 @@
 
 /*INDEX PAGE*/
 
+.aligner {
+
+	display: flex;
+	max-height: 100%;
+	min-height: 90vh;
+	/* background-color: aqua; */
+}
+
+
 /*Index Page container*/
 .indexContainer {
-	display: grid;
-	grid-template-columns:3fr 1fr;
-	margin: 6vw 4vw 0 4vw;
 
-	}
-.indexContainer_Name{
-	padding-top: 20px;
-	grid-column: 1/2;
+	align-self:center;
+	max-width: 75%;
+	min-height: 1px;
+	padding-left:4vw;
+
+
+}
+
+/* .indexContainer_Name{
+
+grid-column: 1/2;
 }
 .indexContainer_Desc{
-	grid-column: 1/2;
+grid-column: 1/2;
 }
 .indexContainer_Contact{
-	grid-column: 1/2;
-}
+grid-column: 1/2;
+} */
 
 /*Index page font stuff*/
 
@@ -95,23 +113,36 @@ a{
 	color: black;
 }
 	
-	h1{
-		font-size: calc(2.5em + 2vw);
+	.indexContainer_Name{
+		font-size: calc(3.6em + 1vw);
 		line-height:calc(1em + 1vw);
 		font-weight: normal;
+		margin: 0;
 	}
+	.indexContainer_Links{
+		font-size: calc(2.5em + 1vw);
+		line-height:calc(1.2em + 1vw);
+		font-weight: normal;
+		margin-bottom:1rem;
+	}
+	.indexContainer_Desc{
+		font-size: calc(1.5em + 1vw);
 
+	}
 	h1 > a:hover{
-		border-bottom: 6px solid yellow;
+		border-bottom: 4px solid rgb(0, 0, 0);
 
 	}
 	h2 > a:hover{
-		border-bottom: 6px solid yellow;
+		border-bottom: 4px solid rgb(0, 0, 0);
 
 	}
+	h1{
+		margin: 0;
+	}
 	h2{
-		font-size: calc(1em + 2vw);
-		line-height:calc(1em + 1vw);
+		font-size: calc(1em + 1vw);
+		line-height:calc(1.5em + 1vw);
 		font-weight:lighter;
 		margin: 0;
 	}
@@ -212,6 +243,7 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
+
 
 /*
 currently not using iframes but will be usefull when I decide to implement the projects page. 
