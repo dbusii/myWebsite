@@ -1,3 +1,85 @@
+/*SLIDESHOW OVERLAY*/
+/* Adds left and right arrows to mobile to indicate it's a slide show*/
+.overlayContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	margin: 0 4vw 0 4vw;
+	position: absolute;
+	}
+
+.slideshowOverlay{
+	width: 99%;
+	height: 99%;
+}
+
+@media screen and (min-width: 600px) {
+	#slideshowOverlay1{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#slideshowOverlay2{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#slideshowOverlay3{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#slideshowOverlay4{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#slideshowOverlay5{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#slideshowOverlay6{
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+}
+
+  @media screen and (max-width: 599px) {
+	#slideshowOverlay1{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 1 / 2;
+	}
+	#slideshowOverlay2{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 2 / 3;
+	}
+	#slideshowOverlay3{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 3 / 4;
+	}
+	#slideshowOverlay4{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 4 / 5;
+	}
+	#slideshowOverlay5{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 5 / 6;
+	}
+	#slideshowOverlay6{
+		visibility: none;
+		grid-column:  1 / 2;
+		grid-row: 6 / 7;
+	}
+}
+
+/*END OF SLIDE SHOW OVERLAY*/
+
 /*MOBILE MENU*/
 
 /* Menu Icon position*/
