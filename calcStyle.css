@@ -106,6 +106,12 @@
 }
 
 .btn{
-    height: 18vh;
-    font-size: 28px !important;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn{
+        height: 18vh;
+        font-size: 28px !important;
+    }
 }
