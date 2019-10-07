@@ -107,11 +107,11 @@
 
 .btn{
     height: 20vh;
+    font-size: 28px !important;
 }
 
 @media only screen and (max-width: 600px) {
     .btn{
-        height: 18vh;
-        font-size: 28px !important;
+        height: 18vh !important;
     }
 }
