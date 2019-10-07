@@ -3,31 +3,70 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="calcStyle.css">
+        <link rel="stylesheet" type="text/css" href="calcStyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script type="text/javascript" src="calcScript.js"></script>
 </head>
 <body>
 
-<div class="container">
-        <div class="buttons"> <button id="clear" class="buts operator" onclick="clearScreen()">AC</button></div>	
-        <div class="screenDiv"> <p id = "screen" readonly></p> </div>	
-        <div class="buttons"><button id="no9" class="buts" onclick="nineToScreen()">9</button></div>
-        <div class="buttons"><button id="no8" class="buts" onclick="eightToScreen()">8</button></div>
-        <div class="buttons"><button id="no7" class="buts" onclick="sevenToScreen()">7</button></div>
-        <div class="buttons"><button id="divide" class="buts operator" onclick="divi()">÷</button></div> 
-        <div class="buttons"><button id="no6" class="buts" onclick="sixToScreen()">6</button></div>
-        <div class="buttons"><button id="no5" class="buts" onclick="fiveToScreen()">5</button></div>
-        <div class="buttons"><button id="no4" class="buts" onclick="fourToScreen()">4</button></div>
-        <div class="buttons"><button id="multi" class="buts operator" onclick="multi()">X</button></div>	
-        <div class="buttons"><button id="no3" class="buts" onclick="threeToScreen()">3</button></div>
-        <div class="buttons"><button id="no2" class="buts" onclick="twoToScreen()">2</button></div>
-        <div class="buttons"><button id="no1" class="buts" onclick="oneToScreen()">1</button></div>
-        <div class="buttons"><button id="minus" class="buts operator" onclick="subtract()">-</button>	</div>
+<!-- 
+        <div id="container">
+                <div id="row">
+                        <button id="clear" class="btn col-md-3 operator" onclick="clearScreen()">AC</button>	
+                        <p class="col-md-9" id = "screen" readonly></p>    
+                </div>
+        </div> -->
+
+
+        <div id="container-fluid">
+                <div id="row">
+                        <button id="clear" class="btn btn btn-light col-md-3 operator" onclick="clearScreen()">AC</button>	
+                        <p class="col-md-8 d-inline-block" id = "screen" readonly>	&nbsp;</p>    
+                </div>
+                <div id="row justify-content-center">
+                        <div class="btn-group btn-row">
+                                <button id="no9" class="buts btn btn-light col-3" onclick="nineToScreen()">9</button>   
+                                <button id="no8" class="buts btn btn-light col-3" onclick="eightToScreen()">8</button>   
+                                <button id="no7" class="buts btn btn-light col-3" onclick="sevenToScreen()">7</button>  
+                                <button id="divide" class="buts operator btn btn-light col-3 top-right" onclick="divi()">÷</button>   
+                        </div>
+                </div>
+
+                <div id="row justify-content-center">
+                        <div class="btn-group btn-row">
+                                <button id="no6" class="buts btn btn-light col-3" onclick="sixToScreen()">6</button>
+                                <button id="no5" class="buts btn btn-light col-3" onclick="fiveToScreen()">5</button>
+                                <button id="no4" class="buts btn btn-light col-3" onclick="fourToScreen()">4</button>
+                                <button id="multi" class="buts operator btn btn-light col-3  mid-right" onclick="multi()">x</button>    
+                        </div>
+                </div>      
+
+                <div id="row justify-content-center">
+                        <div class="btn-group btn-row">
+                                <button id="no3" class="buts btn btn-light col-3" onclick="threeToScreen()">3</button>
+                                <button id="no2" class="buts btn btn-light col-3" onclick="twoToScreen()">2</button>
+                                <button id="no1" class="buts btn btn-light col-3" onclick="oneToScreen()">1</button>
+                                <button id="minus" class="buts operator btn btn-light  col-3 mid-right" onclick="subtract()">-</button>
+                        </div>
+                </div>
+
+                <div id="row justify-content-center">
+                        <div class="btn-group btn-row">
+                                <button id="no0" class="buts btn btn-light col-3" onclick="zeroToScreen()">0</button>
+                                <button id="decimal" class="buts btn btn-light col-3" onclick="decimal()">.</button>	
+                                <button id="equal" class="buts operator btn btn-primary col-3" onclick="equals()">=</button>
+                                <button id="plus" class="buts operator btn btn-light  col-3 bottom-right" onclick="plus()">+</button>
+                        </div>
+                </div>
+
+        </div>  
+<!-- 
+	
+
         <div class="buttons"><button id="no0" class="buts" onclick="zeroToScreen()">0</button></div>
         <div class="buttons"><button id="decimal" class="buts" onclick="decimal()">.</button>	</div>
         <div class="buttons"><button id="equal" class="buts operator" onclick="equals()">=</button></div>
-        <div class="buttons"><button id="plus" class="buts operator" onclick="plus()">+</button>	</div>	
-</div>
+        <div class="buttons"><button id="plus" class="buts operator" onclick="plus()">+</button>	</div>	 -->
 
 </body>
 </html>

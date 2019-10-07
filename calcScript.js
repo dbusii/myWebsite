@@ -278,7 +278,7 @@ function plus(){
         multiOp = false
         diviOp = false
         console.log(plusOp)
-        document.getElementById("screen").innerHTML = num2.join("");
+        document.getElementById("screen").innerHTML = `	&nbsp;`
 }
 
 function subtract(){
@@ -288,7 +288,7 @@ function subtract(){
         multiOp = false
         diviOp = false
         console.log(plusOp)
-        document.getElementById("screen").innerHTML = num2.join("");
+        document.getElementById("screen").innerHTML = `	&nbsp;`
 
 }
 
@@ -299,7 +299,7 @@ function multi(){
         multiOp = true
         diviOp = false
         console.log(multiOp)
-        document.getElementById("screen").innerHTML = num2.join("");
+        document.getElementById("screen").innerHTML = `	&nbsp;`
 
 }
 
@@ -310,7 +310,7 @@ function divi(){
         multiOp = false
         diviOp = true
         console.log(diviOp)
-        document.getElementById("screen").innerHTML = num2.join("");
+        document.getElementById("screen").innerHTML = `	&nbsp;`
 
 }
 

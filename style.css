@@ -255,14 +255,26 @@ object-fit: cover;
 */
 
 /*Slide show cursors*/
-#left{
-	cursor: url("images/Backwards.cur"); 
-	cursor: url("images/Backwards.gif") 4 12, pointer; 	
+.containerCarousel{
+	position: relative;
+	cursor: pointer;
 }
 
-#right{ 
-	cursor: url("images/Forward.cur"); 
-	cursor: url("images/Forward.gif") 4 12, pointer;
+
+
+#left01,#left02,#left03,#left04,#left05,#left06{ 
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
 }
 
+#right01,#right02,#right03,#right04,#right05,#right06{
+    height: 100%;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+}
 /*END OF DESIGN PAGE LAYOUT*/
+
