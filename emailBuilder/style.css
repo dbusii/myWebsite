@@ -21,7 +21,9 @@
   .container-flex{
     padding-left: 15px !important;
   }
-
+  table{
+    width:325px !important
+  }
 }
 
 @media only screen and (min-width: 767px) {
@@ -109,3 +111,4 @@ body::-webkit-scrollbar {
 .container-flex{
   padding-left: 10px;
 }
+
