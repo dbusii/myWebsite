@@ -2,6 +2,47 @@
   .container-flex{
     padding: 0px 24px 0px 24px;
   }
+  #template{
+    overflow: scroll;
+  }
+  .rightSide{
+    order: 1;
+    margin-left: 20px;
+  }
+  .leftSide{
+    order: 2;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  #template {
+    padding-left: 0px !important;
+  }
+
+  .container-flex{
+    padding-left: 15px !important;
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+  #template {
+
+    position: fixed;
+    overflow: scroll;
+    height: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1082px) {
+  #template {
+    padding-left: 100px;
+  }
+}
+@media only screen and (max-width: 932px) {
+  #template {
+    padding-left: 200px;
+  }
 }
 
 body{
@@ -52,12 +93,10 @@ button, label, input, select{
  padding-right: 0px !important; 
 }
 
-#template {
-  padding-top: 20px;
-  position: fixed;
-  overflow: scroll;
-  height: 100%;
+.rightSide{
+  padding: 20px;
 }
+
 #template::-webkit-scrollbar {
   display: none;
 }
@@ -66,3 +105,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+.container-flex{
+  padding-left: 10px;
+}
