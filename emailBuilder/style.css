@@ -7,7 +7,6 @@
   }
   .rightSide{
     order: 1;
-    margin-left: 20px;
   }
   .leftSide{
     order: 2;
@@ -21,6 +20,7 @@
   .container-flex{
     padding-left: 15px !important;
   }
+  
   table{
     width:325px !important
   }
