@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email builder</title>
+    <link rel="stylesheet" href="emailBuilder/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-flex">
+    <div class="row">
+        <div class="col-md-12">
+    
+                <div class="container-flex">
+                    <div class="row">
+                        <div class="col-md-5 leftSide">
+
+                            <!-- Add new Table -->
+                            <div class="container-flex first-container">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <button class="btn btn-outline-primary btn-block" onclick="addNewTable()">Add a new table</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Active table -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-11"> 
+                                        <label class="input-group-text col-md-12 justify-content-center">Active table</label>
+                                    </div>  
+                                    <div class="input-group mb-2 col-md-11"> 
+                                        <select class="custom-select" name="noOfTables" id="noOfTables" onchange="activeTable()">
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- No of columns -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group col-md-11">
+                                            <label class="input-group-text col-md-12 justify-content-center">No of columns:</label>
+                                    </div>
+                                    <div class="input-group col-md-11">
+
+                                            <input class="form-control" id="colAmount" type="number" size="30" min="1" onchange="colAmount()" />  
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Column width -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <label class="input-group-text col-md-12 justify-content-center">Width of column:</label>
+                                        <div class="col-md-4">
+                                            <label class="input-group-text col-md-12">Select column:</label>
+                                        </div> 
+                                        <div class="col-md-8">
+                                                <input class="form-control col-md-12" id="colSelect" type="number" size="30" min="1"/>
+                                            </div>   
+                                            <input class="form-control col-md-12" id="colWidth" type="number" size="30" min="0" onchange="colWidth()"/>
+                                    </div>
+                                </div>
+                            </div>
+                              
+
+                            <!-- Table colour -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <label class="input-group-text col-md-12 justify-content-center">Table colour:</label>
+                                            <input class="jscolor form-control col-md-12"  id="tableBackgroundColour" value="ffffff" onchange="backgroundColour()"> 
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Column colour -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11">
+                                            <label class="input-group-text col-md-12 justify-content-center"> Column colour:</label> 
+                                        <div class="col-md-4">
+                                            <label class="input-group-text col-md-12">Select column:</label>
+                                        </div>  
+                                        <div class="col-md-8">
+                                            <input class="form-control col-md-12" id="colSelectForColour" type="number" size="30" min="1"> 
+                                        </div>                               
+                                            <input class="jscolor form-control col-md-12" id="columnBackgroundColour" value="ffffff" onchange="columnColour()"> 
+                                            <button class="btn btn-outline-danger col-md-12" onclick="removeColColour()">remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- Text align and font -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <select class="custom-select" name="textAlign" id="textAlign" onchange="textAlign()">
+                                                    <option value="0">Text Align</option>
+                                                    <option value="1">Left</option>
+                                                    <option value="2">Center</option>
+                                                    <option value="3">Right</option>
+                                            </select>
+                                            <select class="custom-select" name="fontSelecter" id="fontSelecter" onchange="fontSelect()">
+                                                <option value="0">Font family</option>
+                                                <option value="1">Sans-serif</option>
+                                                <option value="2">Serif</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- font size and colour -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11">  
+                                        <div class="col-md-6">
+                                            <label class="input-group-text col-md-12">Font size:</label>
+                                            <input class="form-control col-md-12" type="number" id="fontSize" min="0" onchange="fontSize()"></input>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="input-group-text col-md-12">Table font colour:</label>
+                                            <input class="jscolor form-control"  id="fontColour" value="ffffff" onchange="fontColour()">
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <!-- column font colour -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <label class="input-group-text col-md-12 justify-content-center"> Column font colour:</label>
+                                        <div class="col-md-4">
+                                            <label class="input-group-text col-md-12">Select column:</label>
+                                        </div>   
+                                        <div class="col-md-8">
+                                            <input class="form-control col-md-12" id="colSelectFontColour" type="number" size="30" min="1"/>
+                                        </div> 
+                                            <input class="jscolor form-control col-md-12" id="columnFontColour" value="ffffff" onchange="columnFontColour()">
+                                            <button class="btn btn-outline-danger col-md-12" onclick="removeColFontColour()">remove font colour</button> 
+                                    </div>                                      
+                                </div>
+                            </div>
+
+                            <!-- Add text -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <label class="input-group-text col-md-12 justify-content-center">Add text:</label>
+                                        <div class="col-md-4">
+                                            <label class="input-group-text col-md-12">Select column:</label>
+                                        </div>   
+                                        <div class="col-md-8">
+                                            <input class="form-control col-md-12" id="colSelectText" onchange="textBox()" type="number" size="30" min="1"/>
+                                        </div> 
+                                        
+                                            <textarea class="form-control col-md-12" id="colText" size="30" onchange="colText()"></textarea>
+                                        <button class="btn btn-outline-danger col-md-12" onclick="removeText()">remove text</button>
+                                    </div>                                      
+                                </div>
+                            </div>
+
+                            
+                            <!-- Line height -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-11"> 
+                                        <label class="input-group-text col-md-12 justify-content-center">Line height</label>
+                                        <input class="form-control col-md-12" id="lineHeight" type="number" size="30" min="1" onchange="lineHeight()">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Add image to column -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <label class="input-group-text col-md-12 justify-content-center">Add image to column:</label>
+                                            <label class="input-group-text col-md-4">Select column:</label>
+                                            <input class="form-control col-md-12" id="imageSelecter" onchange="imageBox()" type="number">
+                                            <button class="btn btn-outline-primary col-md-12" id="addImage" type="text" > upload image </button>
+                                        <div class="input-group mb-2 col-md-12 rowOfTwo"> 
+                                            <label class="input-group-text col-md-4">Image name:</label>
+                                            <input class="form-control col-md-8" id="imageName" type="text" onchange="imageAssigner()"> 
+                                            <button class="btn btn-outline-danger col-md-12" onclick="removeImage()">remove image</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                                
+
+                            <!-- Create template button -->
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="input-group mb-2 col-md-11"> 
+                                            <button class="btn btn-outline-primary btn-block" onclick="outputToTextBox()">Create template</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-flex">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-11 md-form" id="textTemplateDiv">
+                                        <textarea readonly class="md-textarea form-control" name="textTemplate" id="textTemplate"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Table visual template -->
+                        <div class="col-md-7 rightSide"> 
+                            <div class="row justify-content-center">
+                                <div id="template"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+<script src="emailBuilder/script.js"></script>
+<script src="emailBuilder/jscolor.js"></script>
+<script src="emailBuilder/jquery-3.4.1.js"></script>
+<script src="emailBuilder/onload.js"></script>
+<script src="emailBuilder/main.js"></script>
+
+</body>
+</html>
