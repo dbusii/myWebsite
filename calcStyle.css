@@ -64,3 +64,9 @@
   .btn-row .btn {
     flex: 1
   }
+
+  @media only screen and (max-width: 600px) {
+    .btn{
+        height: 13.4vh !important;
+    }
+  }
