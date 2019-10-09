@@ -56,11 +56,14 @@
 .subMenuResponsive > ul{
 	list-style: none;
 	letter-spacing: .1rem;
-	font-size:16px;
+	font-size:12px;
 	line-height: 25px;
 	font-weight: normal;
 	padding-left: 20px;
 	text-decoration: none !important;
+}
+.subMenuResponsive > ul > a{
+	color: #000000 ;
 }
 
 .subMenuList{
