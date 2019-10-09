@@ -10,6 +10,7 @@ let currentNumber = new Number('')
 let num1 = new Number('')
 let num2 = new Number('')
 let answer = new Number('')
+let lastAnswer = new Number('')
 window.nextSum = false
 
 $( ".but" ).click(function() {
@@ -54,6 +55,7 @@ $( ".clear" ).click(function() {
 function clear(){
 	$('.screen').html('0')
 	currentNumber.digits = ""
+	lastAnswer.digits = ""
 	answer.digits = ""
 	nextSum = false
 	answer.operator = ""
@@ -96,11 +98,17 @@ function equals() {
 
 	currentNumber.digits = ""
 	$('.screen').html(answer.digits)
-	$('.num1').html(num1.digits)
+	if (lastAnswer.digits.length === 0){
+		$('.num1').html(num1.digits)
+	}  else {
+		$('.num1').html(lastAnswer.digits)
+	}
+
 	$('.op').html(answer.operator)
 	$('.num2').html(num2.digits)
 	$('.ans').html(`= ${answer.digits}`)
 	num1.digits = num2.digits
 	console.log(num1.digits)
+	lastAnswer.digits = answer.digits
 }
 
