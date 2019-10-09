@@ -45,7 +45,7 @@ let header = `<div class="nav">
 </div>
 
 <div class="myMenuIcon" onclick="subMenu()">
-<img name="menuImg" src="images/menu.png" width="25px">
+<img name="menuImg" src="images/menu.png" width="18px">
 </div>
 
 <div class="subMenu" id="mySubMenu">
