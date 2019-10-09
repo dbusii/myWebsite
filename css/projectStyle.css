@@ -1,0 +1,15 @@
+.title{
+    padding: 10px 0 ;
+}
+.iframe{
+    height: 60vh;
+}
+.desc{
+    padding: 10px 0;
+    height: 25vh;
+    overflow: scroll;
+}
+
+.project-container{
+    padding-top: 20px;
+}
