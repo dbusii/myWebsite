@@ -49,7 +49,9 @@
 	grid-template-columns:3fr 1fr;
 	visibility: visible;	
 	position: relative;
-	padding-right: 6vw !important;
+	padding-top: 10px;
+    padding-right: 50px !important;
+
 }
 .subMenuResponsive > ul{
 	list-style: none;
@@ -58,7 +60,7 @@
 	line-height: 25px;
 	font-weight: normal;
 	padding-left: 20px;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .subMenuList{
