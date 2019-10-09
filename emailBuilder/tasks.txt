@@ -1,0 +1,60 @@
+-----
+TASKS 
+-----
+
+rewrite image assigner function so it fires on name image and not column select
+
+1. Add an automated description of content of table; i.e. 1 col 1 image, 3 col, 1 text area
+
+save column text content within an object so that if the user switches back to a column that already contains text it writes that back to the textfield so 
+they can continue to edit that textfield
+best way of doing this would be an object
+
+idea 1
+table {
+
+    column1: "text"
+    column2: "image"
+    column3: "blank"
+
+
+}
+
+idea 2
+table {
+
+    column1: ["text", "This would be the text that has been written"]
+    column2: ["image", "images/image-1.img"]
+    column3: ["blank", "&amp;nbsp;"]
+
+
+}
+
+idea 2 would be better because i can run the conditionals based on the first value and then write the second value to the textareas
+it would also work with image and i can define what a blank field is
+
+
+columns = [["column1", "text","this is the text"],["column2", "img","images/image-1"]]
+
+idea3 store the values in a multi tierd array, this is the best solution, most prctical to impliment, as i wouldnt have to create a bunch of empty column objects on the initial table prototype
+
+
+table.column1() === typeof(String) ? write to textfield : break
+
+
+if table and column is selected in the select field run an if statement to see if there is a previous value
+if yes, write the content to the textfield
+if not break
+
+when text is added to a column it needs to be stored within its corresponsiding table object
+
+
+
+2. Redesign the front end to be easier to navigate and reorder to the layout to follow a more logical flow
+
+-----
+BUGS
+-----
+
+---- Need to fix this ----
+adding and removing table columns leaves the whitespace from the template behind
