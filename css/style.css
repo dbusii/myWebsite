@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /*MOBILE MENU*/
 
 /* Menu Icon position*/
@@ -72,37 +73,24 @@
 }
 /*END OF MOBILE MENU*/
 
+=======
+>>>>>>> Stashed changes
 /*INDEX PAGE*/
 
 .aligner {
 
 	display: flex;
-	max-height: 100%;
+	max-height: 60%;
 	min-height: 90vh;
-	/* background-color: aqua; */
 }
-
 
 /*Index Page container*/
 .indexContainer {
 
 	align-self:center;
 	max-width: 75%;
-	min-height: 1px;
-	padding-left:4vw;
-
-
+	padding-left:40px;
 }
-
-/* .indexContainer_Name{
-grid-column: 1/2;
-}
-.indexContainer_Desc{
-grid-column: 1/2;
-}
-.indexContainer_Contact{
-grid-column: 1/2;
-} */
 
 /*Index page font stuff*/
 
@@ -112,11 +100,17 @@ body{
 	cursor: default;
 	}
 
+
+
 a{
-	text-decoration: none;
-	color: black;
+	text-decoration: none !important;
+	color: black !important;
+}
+a:hover{
+	color: #428bca !important;
 }
 	
+
 	.indexContainer_Name{
 		font-size: calc(3.6em + 1vw);
 		line-height:calc(1em + 1vw);
@@ -133,14 +127,7 @@ a{
 		font-size: calc(1.5em + 1vw);
 
 	}
-	h1 > a:hover{
-		border-bottom: 4px solid rgb(0, 0, 0);
 
-	}
-	h2 > a:hover{
-		border-bottom: 4px solid rgb(0, 0, 0);
-
-	}
 	h1{
 		margin: 0;
 	}
@@ -155,6 +142,7 @@ a{
 /*END OF INDEX PAGE*/
 
 
+<<<<<<< Updated upstream
 /*NAVIGATION*/
 
 /*Nav grid*/
@@ -186,6 +174,8 @@ a {
  text-decoration: none !important;
 }
 
+=======
+>>>>>>> Stashed changes
 /*Contact cursor*/
 #myContact{
 cursor: copy
