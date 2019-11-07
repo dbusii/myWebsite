@@ -1,9 +1,18 @@
 .title{
     padding: 10px 0 ;
 }
-.iframe{
-    height: 60vh;
+.ebook{
+    height: 600px;
 }
+.budgetingTool{
+    height: 800px ;
+}
+
+.emailBuilder{
+    height: 1910px;
+}
+
+
 .desc{
     padding: 10px 0;
     overflow: scroll;
