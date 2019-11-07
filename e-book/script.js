@@ -80,7 +80,7 @@ else {
         display: "single",
         width: w*.9,
         height:(w*.9)*1.414,
-        gradients: false,
+        gradients: true,
         acceleration: true
     });
 
