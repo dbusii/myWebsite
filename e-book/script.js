@@ -75,11 +75,37 @@ if (w > 780){
 } 
 
 else {
+    let scale = .9
+    let pageWidth = w * scale
+    let pageHeight = (w*scale)*1.414
+
+    let pageWidthLongScreen = (h * scale) * 0.7070707070707071
+    let pageHeightLongScreen = h * scale
+    console.log(`viewport width: ${w}`)
+    console.log(`viewport Height: ${h}`)
+    console.log(`Book width: ${pageWidth}`)
+    console.log(`Book Height: ${pageHeight}`)
+   
+
 
     $(".book").turn({
         display: "single",
-        width: w*.9,
-        height:(w*.9)*1.414,
+        width: function(){
+            if (pageHeight > h){
+                console.log('yes')
+                return pageWidthLongScreen
+            } else {
+                return pageWidth
+            }
+        },
+        height: function(){
+            if (pageHeight > h){
+                console.log('yes')
+                return pageHeightLongScreen
+            } else {
+                return pageHeight
+            }
+        },
         gradients: true,
         acceleration: true
     });
