@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/budgeting-tool-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    
+    <div class="container">
+
+
+            <!-- Submit salary -->
+            <div class="row justify-content-center">
+                <div class="input-group mt-3 mb-3 col">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="salaryInput"> Salary</label>
+                    </div>
+                        <input type="number" class="salary form-control" id="salaryInput"> 
+                        <select class="custom-select" id="salaryFrequency">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                    <div class="input-group-append">
+                        <button class="submitSalary btn-outline-primary" id="salaryButton"> Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Expense -->
+            <div class="row justify-content-center">
+                <div class="input-group mt-3 mb-3 col">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="expenseInput"> Expense</label>
+                    </div>
+                        <input type="number" class="expense form-control" id="expenseInput"> 
+                        <select class="custom-select" id="expenseFrequency">
+                            <option value="frequency">Frequency</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                        <select class="custom-select" id="expenseCategory">
+                            <option value="category">Category</option>
+                            <option value="housing">Housing</option>                         
+                            <option value="utilities">Utilities</option>
+                            <option value="food">Food</option>
+                            <option value="transport">Transport</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="debt">Credit cards and Debt</option> 
+                            <option value="personal">Personal & Discretionary</option>
+                        </select>
+                    <div class="input-group-append">
+                        <button class="submitExpense btn-outline-primary" id="expenseButton"> Submit</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Simulate -->
+                <div class="row justify-content-center">
+                    <div class="input-group mt-3 mb-3 col">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="simLength"> Sim Length</label>
+                        </div>
+                            <input type="number" class="simLength form-control">
+                            <select class="custom-select" id="simLengthMetric">
+                                <option value="days">Days</option>
+                                <option value="weeks">Weeks</option>
+                                <option value="months">Months</option>
+                                <option value="years">Years</option>
+                            </select>
+                        <div class="input-group-append">
+                            <button class="simulate btn-outline-primary"> Simulate</button>
+                            <button class="reset btn-outline-primary"> Reset</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+            <!-- Salary -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col mt-3 ">
+                        <p class="col-md-12 header input-group-text" onclick="toggleInfo('salaryTotals')">Salary</p>
+                        <p class="col col-start-mid salaryTotals input-group-text">per day:&nbsp;<span id="salaryTotalPerDay"></span></p>
+                        <p class="col mid salaryTotals input-group-text">per week:&nbsp;<span id="salaryTotalPerWeek"></span></p>
+                        <p class="col mid salaryTotals input-group-text">per month:&nbsp;<span id="salaryTotalPerMonth"></span></p>  
+                        <p class="col mid salaryTotals input-group-text"> per year:&nbsp;<span id="salaryTotalPerYear"></span></p>
+                </div>
+            </div>
+
+            <!-- Expenses -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 header-mid input-group-text" onclick="toggleInfo('expenseTotals')">Expenses</p>
+                        <p class="col col-start-mid expenseTotals input-group-text">per day:&nbsp;<span id="expenseTotalPerDay"></span></p>
+                        <p class="col mid expenseTotals input-group-text">per week:&nbsp;<span id="expenseTotalPerWeek"></span></p>
+                        <p class="col mid expenseTotals input-group-text">per month:&nbsp;<span id="expenseTotalPerMonth"></span></p>  
+                        <p class="col mid expenseTotals input-group-text"> per year:&nbsp;<span id="expenseTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Savings -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group mb-3 col">
+                        <p class="col-md-12 header-mid input-group-text" onclick="toggleInfo('savingsTotals')">Savings</p>
+                        <p class="col col-start savingsTotals input-group-text">per day:&nbsp;<span id="savingsTotalPerDay"></span></p>
+                        <p class="col col-middle savingsTotals input-group-text">per week:&nbsp;<span id="savingsTotalPerWeek"></span></p>
+                        <p class="col col-middle savingsTotals input-group-text">per month:&nbsp;<span id="savingsTotalPerMonth"></span></p>  
+                        <p class="col col-end savingsTotals input-group-text"> per year:&nbsp;<span id="savingsTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Housing -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group mt-3 col">
+                        <p class="col-md-12 header input-group-text" onclick="hideInfo(), toggleInfo('allTotals')">All expenses</p>
+                        <p class="col-md-12 header-mid allTotals input-group-text" onclick="toggleInfo('housingTotals')">Housing</p>
+                        <p class="col col-start-mid housingTotals input-group-text">per day:&nbsp;<span id="housingTotalPerDay"></span></p>
+                        <p class="col mid housingTotals input-group-text">per week:&nbsp;<span id="housingTotalPerWeek"></span></p>
+                        <p class="col mid housingTotals input-group-text">per month:&nbsp;<span id="housingTotalPerMonth"></span></p>  
+                        <p class="col mid housingTotals input-group-text"> per year:&nbsp;<span id="housingTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Utilities -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 header-mid allTotals input-group-text" onclick="toggleInfo('utilitiesTotals')">Utilities</p>
+                        <p class="col col-start-mid utilitiesTotals input-group-text">per day:&nbsp;<span id="utilitiesTotalPerDay"></span></p>
+                        <p class="col mid utilitiesTotals input-group-text">per week:&nbsp;<span id="utilitiesTotalPerWeek"></span></p>
+                        <p class="col mid utilitiesTotals input-group-text">per month:&nbsp;<span id="utilitiesTotalPerMonth"></span></p>  
+                        <p class="col mid utilitiesTotals input-group-text"> per year:&nbsp;<span id="utilitiesTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Food -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 header-mid allTotals input-group-text" onclick="toggleInfo('foodTotals')">Food</p>
+                        <p class="col col-start-mid foodTotals input-group-text">per day:&nbsp;<span id="foodTotalPerDay"></span></p>
+                        <p class="col mid foodTotals input-group-text">per week:&nbsp;<span id="foodTotalPerWeek"></span></p>
+                        <p class="col mid foodTotals input-group-text">per month:&nbsp;<span id="foodTotalPerMonth"></span></p>  
+                        <p class="col mid foodTotals input-group-text"> per year:&nbsp;<span id="foodTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Transport -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 header-mid allTotals input-group-text" onclick="toggleInfo('transportTotals')">Transport</p>
+                        <p class="col col-start-mid transportTotals input-group-text">per day:&nbsp;<span id="transportTotalPerDay"></span></p>
+                        <p class="col mid transportTotals input-group-text">per week:&nbsp;<span id="transportTotalPerWeek"></span></p>
+                        <p class="col mid transportTotals input-group-text">per month:&nbsp;<span id="transportTotalPerMonth"></span></p>  
+                        <p class="col mid transportTotals input-group-text"> per year:&nbsp;<span id="transportTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Clothing -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 allTotals header-mid input-group-text" onclick="toggleInfo('clothingTotals')">Clothing</p>
+                        <p class="col col-start-mid clothingTotals input-group-text">per day:&nbsp;<span id="clothingTotalPerDay"></span></p>
+                        <p class="col mid clothingTotals input-group-text">per week:&nbsp;<span id="clothingTotalPerWeek"></span></p>
+                        <p class="col mid clothingTotals input-group-text">per month:&nbsp;<span id="clothingTotalPerMonth"></span></p>  
+                        <p class="col mid clothingTotals input-group-text"> per year:&nbsp;<span id="clothingTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Debt -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 allTotals header-mid input-group-text" onclick="toggleInfo('debtTotals')">Debt</p>
+                        <p class="col col-start-mid debtTotals input-group-text">per day:&nbsp;<span id="debtTotalPerDay"></span></p>
+                        <p class="col mid debtTotals input-group-text">per week:&nbsp;<span id="debtTotalPerWeek"></span></p>
+                        <p class="col mid debtTotals input-group-text">per month:&nbsp;<span id="debtTotalPerMonth"></span></p>  
+                        <p class="col mid debtTotals input-group-text"> per year:&nbsp;<span id="debtTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+            <!-- Personal -->
+            <div class="row justify-content-center input-group">
+                <div class="input-group col">
+                        <p class="col-md-12 allTotals header-mid input-group-text" onclick="toggleInfo('personalTotals')">Personal</p>
+                        <p class="col col-start personalTotals input-group-text">per day:&nbsp;<span id="personalTotalPerDay"></span></p>
+                        <p class="col mid personalTotals input-group-text">per week:&nbsp;<span id="personalTotalPerWeek"></span></p>
+                        <p class="col mid  personalTotals input-group-text">per month:&nbsp;<span id="personalTotalPerMonth"></span></p>  
+                        <p class="col col-end personalTotals input-group-text"> per year:&nbsp;<span id="personalTotalPerYear"></span></p>
+                </div>
+            </div> 
+
+<br>
+
+<canvas id="myChart" ></canvas>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="budgetingTool/Chart.bundle.js"></script>
+<script src="budgetingTool/budgeting-tool-script.js"></script>
+</body>
+</html>

@@ -1,103 +1,19 @@
-/*MOBILE MENU*/
-
-/* Menu Icon position*/
-.myMenuIcon{
-	position: absolute;
-	top:10px;
-	right:20px;
-}
-
-/* Icon navigation Desktop*/
-@media screen and (min-width: 600px) {
-	.myMenuIcon{
-		visibility: hidden;
-	}
-	.github, .contact, .about, .design{
-		visibility: visible;
-  }
-  .subMenu,.subMenuResponsive{
-	visibility: hidden !important;
-	position:fixed !important;
-}
-}
-/* End of icon navigation desktop*/
-
-/* Icon navigation Mobile*/
-  @media screen and (max-width: 599px) {
-		.myMenuIcon{
-			visibility: visible;
-			z-index: 1;
-	}
-	.myNav{
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-
-	}
-}
-
-
-/*End of icon navigation mobile*/
-
-/*Mobile menu on click stuff*/
-.subMenu{
-	position:fixed;
-	visibility: hidden;
-}
-.subMenuResponsive{
-	display: grid;
-	grid-template-columns:3fr 1fr;
-	visibility: visible;	
-	position: relative;
-	padding-right: 6vw;
-}
-.subMenuResponsive > ul{
-	list-style: none;
-	letter-spacing: .1rem;
-	font-size:16px;
-	line-height: 25px;
-	font-weight: normal;
-	padding-left: 20px;
-	text-decoration: none;
-}
-
-.subMenuList{
-	grid-column:  2 / 3;
-	border-left: 1px solid black;
-}
-/*END OF MOBILE MENU*/
-
 /*INDEX PAGE*/
 
 .aligner {
 
 	display: flex;
-	max-height: 100%;
+	max-height: 60%;
 	min-height: 90vh;
-	/* background-color: aqua; */
 }
-
 
 /*Index Page container*/
 .indexContainer {
 
 	align-self:center;
 	max-width: 75%;
-	min-height: 1px;
-	padding-left:4vw;
-
-
+	padding-left:40px;
 }
-
-/* .indexContainer_Name{
-grid-column: 1/2;
-}
-.indexContainer_Desc{
-grid-column: 1/2;
-}
-.indexContainer_Contact{
-grid-column: 1/2;
-} */
 
 /*Index page font stuff*/
 
@@ -107,11 +23,17 @@ body{
 	cursor: default;
 	}
 
+
+
 a{
-	text-decoration: none;
-	color: black;
+	text-decoration: none !important;
+	color: black !important;
+}
+a:hover{
+	color: #428bca !important;
 }
 	
+
 	.indexContainer_Name{
 		font-size: calc(3.6em + 1vw);
 		line-height:calc(1em + 1vw);
@@ -128,14 +50,7 @@ a{
 		font-size: calc(1.5em + 1vw);
 
 	}
-	h1 > a:hover{
-		border-bottom: 4px solid rgb(0, 0, 0);
 
-	}
-	h2 > a:hover{
-		border-bottom: 4px solid rgb(0, 0, 0);
-
-	}
 	h1{
 		margin: 0;
 	}
@@ -149,37 +64,6 @@ a{
 
 /*END OF INDEX PAGE*/
 
-
-/*NAVIGATION*/
-
-/*Nav grid*/
-.nav{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px,110px));
-	margin: 2vw 4vw 0vw 4vw;
-
-}
-
-/*This aligns the individual characters that make up the words in the nav*/
-.myNav {
-	width : 1fr;
-	max-width: 25vw;
-	display:inline-block;	
-	vertical-align:top;
-}
-
-/*Nav fonts stuff*/
-.github, .contact, .about, .design{
-	color:black;
-	font-family: helvetica;
-	font-size: 12px;	
-	display:inline-block;	
-}
-
-/*Nav link decoration*/
-a {
- text-decoration: none;
-}
 
 /*Contact cursor*/
 #myContact{

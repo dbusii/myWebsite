@@ -1,0 +1,23 @@
+.title{
+    padding: 10px 0 ;
+}
+.ebook{
+    height: 600px;
+}
+.budgetingTool{
+    height: 800px ;
+}
+
+.emailBuilder{
+    height: 1910px;
+}
+
+
+.desc{
+    padding: 10px 0;
+    overflow: scroll;
+}
+
+.project-container{
+    padding-top: 20px;
+}

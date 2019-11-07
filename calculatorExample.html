@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/duck.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/navStyle.css">
+    <link rel="stylesheet" href="./css/calcStyle.css">
+
+</head>
+<body>
+
+
+    <div class="container-fluid main-container">
+
+        <div class="display justify-content-center">
+            <div class="row justify-content-center">
+                <span class="sum justify-content-right pt-2">
+                    <span class="num1">&nbsp;</span>
+                    <span class="op"></span>
+                    <span class="num2"></span>
+                    <span class="ans"></span>
+                </span>
+            </div>   
+            <div class="row justify-content-center">
+                <span class="sum justify-content-right">  
+                    <p class="screen align-middle">0</p>
+                </span>
+            </div>
+        </div>
+
+
+        <div id="row justify-content-center">
+            <div class="btn-group btn-row mb-1">
+                <button class="pi mr-1 btn col-3" value="pi">π</button> 
+                <button class="operator mr-1 btn col-3" value="%">%</button> 
+                <button class="operator mr-1 btn col-3" value="^">^</button>
+                <button class="clear btn col-3" value="AC">AC</button>
+            </div>
+        </div>
+
+        <div id="row justify-content-center">
+                <div class="btn-group btn-row mb-1">
+            <button class="but mr-1 btn col-3" value="7">7</button>
+            <button class="but mr-1 btn col-3" value="8">8</button>
+            <button class="but mr-1 btn col-3" value="9">9</button>
+            <button class="operator btn col-3" value="/">/</button>
+         </div>
+        </div>
+        <div id="row justify-content-center">
+                <div class="btn-group btn-row mb-1"> 
+            <button class="but mr-1  btn col-3" value="4">4</button>
+            <button class="but mr-1 btn col-3" value="5">5</button>
+            <button class="but mr-1 btn col-3" value="6">6</button>
+            <button class="operator btn col-3" value="*">x</button>
+         </div>
+        </div>
+        <div id="row justify-content-center">
+                <div class="btn-group btn-row mb-1">
+            <button class="but mr-1 btn col-3" value="1">1</button>
+            <button class="but mr-1 btn col-3" value="2">2</button>
+            <button class="but mr-1 btn col-3" value="3">3</button>
+            <button class="operator btn col-3" value="-">-</button>
+        </div>
+        </div>
+
+
+        <div id="row justify-content-center">
+                <div class="btn-group btn-row mb-1">
+            <button class="but mr-1 btn col-3" value="0">0</button>
+            <button class="but mr-1 btn col-3" value=".">.</button>
+            <button class="equals mr-1 btn col-3" value="=">=</button>
+            <button class="operator btn col-3" value="+">+</button>
+            </div>  
+            </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./calculator/calcScript.js"></script>
+
+</body>
+</html>

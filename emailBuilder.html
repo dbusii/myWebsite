@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Email builder</title>
-    <link rel="stylesheet" href="emailBuilder/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/duck.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/navStyle.css">
+    <link rel="stylesheet" href="./css/emailBuilderStyle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 <body>
+
+<div class="header"></div>
 
 <div class="container-flex">
     <div class="row">
@@ -195,7 +201,6 @@
                                             <label class="input-group-text col-md-12 justify-content-center">Add image to column:</label>
                                             <label class="input-group-text col-md-4">Select column:</label>
                                             <input class="form-control col-md-12" id="imageSelecter" onchange="imageBox()" type="number">
-                                            <button class="btn btn-outline-primary col-md-12" id="addImage" type="text" > upload image </button>
                                         <div class="input-group mb-2 col-md-12 rowOfTwo"> 
                                             <label class="input-group-text col-md-4">Image name:</label>
                                             <input class="form-control col-md-8" id="imageName" type="text" onchange="imageAssigner()"> 
@@ -242,6 +247,11 @@
 <script src="emailBuilder/jscolor.js"></script>
 <script src="emailBuilder/jquery-3.4.1.js"></script>
 <script src="emailBuilder/onload.js"></script>
+
+<script src="./header/header.js"></script>
+<script src="./header/navScript.js"></script>
+<script src="./header/menuScript.js"></script>
+<script src="./header/emailScript.js"></script>
 
 </body>
 </html>
