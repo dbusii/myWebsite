@@ -78,8 +78,8 @@ else {
 
     $(".book").turn({
         display: "single",
-        width: w*.8,
-        height:(w*.8)*1.414,
+        width: w*.9,
+        height:(w*.9)*1.414,
         gradients: false,
         acceleration: true
     });
