@@ -16,7 +16,7 @@ body.hide-overflow {
 .t {
     display: table;
     width: 100%;
-    height: 80%;
+    height: 60%;
 }
 
 .tc {
@@ -62,4 +62,5 @@ body.hide-overflow {
     .btn{
         margin: 10px;
     }
+
   }
