@@ -61,3 +61,7 @@ input{
 .allTotals:hover, .header:hover, .header-mid:hover{
     cursor: pointer;
 }
+
+input{
+    border-radius: 0 !important;
+}
