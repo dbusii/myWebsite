@@ -79,7 +79,7 @@ else {
     $(".book").turn({
         display: "single",
         height: w*.95,
-        gradients: false,
+        gradients: true,
         acceleration: true
     });
 

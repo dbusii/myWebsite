@@ -14,13 +14,13 @@ body.hide-overflow {
 /* helpers */
 
 .t {
-    padding-top: 10px;
     display: table;
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 .tc {
+    padding-top: 10px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -34,8 +34,8 @@ body.hide-overflow {
 
 .book {
     margin: 0 auto;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 80%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -57,3 +57,9 @@ body.hide-overflow {
     width: 100px;
     margin: 10px;
 }
+
+@media only screen and (max-width: 780px) {
+    .btn{
+        margin: 10px;
+    }
+  }
