@@ -45,6 +45,7 @@ body.hide-overflow {
 
 .book .page {
     height: 100%;
+    background-color: white;
 }
 
 .book .page img {
