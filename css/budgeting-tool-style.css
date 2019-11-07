@@ -53,3 +53,7 @@ input{
     border-left: 0 !important;
     border-radius: 0 !important;
 }
+
+.justify-content-center{
+    margin: 0 !important;
+}
