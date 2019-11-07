@@ -16,7 +16,7 @@ body.hide-overflow {
 .t {
     display: table;
     width: 100%;
-    height: 60%;
+    /* height: 100%; */
 }
 
 .tc {
@@ -30,12 +30,11 @@ body.hide-overflow {
     position: relative;
 }
 
-/* book */
 
 .book {
     margin: 0 auto;
     width: 100%;
-    height: 80%;
+    height: 100%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -61,6 +60,11 @@ body.hide-overflow {
 @media only screen and (max-width: 780px) {
     .btn{
         margin: 10px;
+    }
+
+    .tc{
+        display:block;
+        padding-top: 10px;
     }
 
   }

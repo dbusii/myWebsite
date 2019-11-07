@@ -1,5 +1,6 @@
 
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 if (w > 780){
 
@@ -75,11 +76,11 @@ if (w > 780){
 
 else {
 
-    
     $(".book").turn({
         display: "single",
-        height: w*.95,
-        gradients: true,
+        width: w*.8,
+        height:(w*.8)*1.414,
+        gradients: false,
         acceleration: true
     });
 
