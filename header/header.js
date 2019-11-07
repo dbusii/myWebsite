@@ -1,7 +1,7 @@
 let header = `<nav class="navbar navbar-expand-sm navbar-light">
 <div class="logo navbar-brand">
     <a href="./index.html">
-        <img class="header-logo" height="40">
+        <img class="header-logo" height="40" alt=" ">
     </a>
 </div> 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
