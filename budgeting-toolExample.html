@@ -13,42 +13,31 @@
 
     
     <div class="container">
-
-
             <!-- Submit salary -->
-            <div class="row justify-content-center">
-                <div class="input-group mt-3 mb-3 col">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="salaryInput"> Salary</label>
-                    </div>
-                        <input type="number" class="salary form-control" id="salaryInput"> 
-                        <select class="custom-select" id="salaryFrequency">
-                            <option value="daily">Daily</option>
-                            <option value="weekly">Weekly</option>
-                            <option value="monthly">Monthly</option>
-                            <option value="yearly">Yearly</option>
-                        </select>
-                    <div class="input-group-append">
-                        <button class="submitSalary btn-outline-primary" id="salaryButton"> Submit</button>
-                    </div>
-                </div>
+            <div class="row justify-content-center pb-3">
+                <p class="col-md-12 input-group-text">Salary</p>
+                    <input type="number" class=" col col-start-mid salary form-control" id="salaryInput"> 
+                    <select class="custom-select col mid" id="salaryFrequency">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                    <button class="submitSalary btn-outline-primary col-md-12" id="salaryButton"> Submit</button>
             </div>
 
             <!-- Submit Expense -->
             <div class="row justify-content-center">
-                <div class="input-group mt-3 mb-3 col">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="expenseInput"> Expense</label>
-                    </div>
-                        <input type="number" class="expense form-control" id="expenseInput"> 
-                        <select class="custom-select" id="expenseFrequency">
+                    <p class="col-md-12 input-group-text">Expenses</p>
+                        <input type="number" class="expense col col-start-mid form-control" id="expenseInput"> 
+                        <select class="custom-select col mid" id="expenseFrequency">
                             <option value="frequency">Frequency</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="monthly">Monthly</option>
                             <option value="yearly">Yearly</option>
                         </select>
-                        <select class="custom-select" id="expenseCategory">
+                        <select class="custom-select col mid" id="expenseCategory">
                             <option value="category">Category</option>
                             <option value="housing">Housing</option>                         
                             <option value="utilities">Utilities</option>
@@ -58,33 +47,25 @@
                             <option value="debt">Credit cards and Debt</option> 
                             <option value="personal">Personal & Discretionary</option>
                         </select>
-                    <div class="input-group-append">
-                        <button class="submitExpense btn-outline-primary" id="expenseButton"> Submit</button>
-                    </div>
-                </div>
+                        <button class="submitExpense btn-outline-primary col-md-12" id="expenseButton"> Submit</button>
+
             </div>
 
              <!-- Simulate -->
                 <div class="row justify-content-center">
-                    <div class="input-group mt-3 mb-3 col">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="simLength"> Sim Length</label>
-                        </div>
-                            <input type="number" class="simLength form-control">
+                        <p class="col-md-12 input-group-text">Sim Length</p>
+                            <input type="number" class="simLength form-control col col-start-mid">
                             <select class="custom-select" id="simLengthMetric">
                                 <option value="days">Days</option>
                                 <option value="weeks">Weeks</option>
                                 <option value="months">Months</option>
                                 <option value="years">Years</option>
                             </select>
-                        <div class="input-group-append">
-                            <button class="simulate btn-outline-primary"> Simulate</button>
-                            <button class="reset btn-outline-primary"> Reset</button>
-                        </div>
-                    </div>
+                            <button class="simulate btn-outline-primary col-md-6"> Simulate</button>
+                            <button class="reset btn-outline-primary col-md-6"> Reset</button>
                 </div>
         </div>
-
+        <div class="container-flex">
             <!-- Salary -->
             <div class="row justify-content-center input-group">
                 <div class="input-group col mt-3 ">
@@ -99,7 +80,7 @@
             <!-- Expenses -->
             <div class="row justify-content-center input-group">
                 <div class="input-group col">
-                        <p class="col-md-12 header-mid input-group-text" onclick="toggleInfo('expenseTotals')">Expenses</p>
+                        <p class="col-md-12 header header-mid input-group-text" onclick="toggleInfo('expenseTotals')">Expenses</p>
                         <p class="col col-start-mid expenseTotals input-group-text">per day:&nbsp;<span id="expenseTotalPerDay"></span></p>
                         <p class="col mid expenseTotals input-group-text">per week:&nbsp;<span id="expenseTotalPerWeek"></span></p>
                         <p class="col mid expenseTotals input-group-text">per month:&nbsp;<span id="expenseTotalPerMonth"></span></p>  
@@ -195,7 +176,7 @@
                         <p class="col col-end personalTotals input-group-text"> per year:&nbsp;<span id="personalTotalPerYear"></span></p>
                 </div>
             </div> 
-
+        </div>
 <br>
 
 <canvas id="myChart" ></canvas>
