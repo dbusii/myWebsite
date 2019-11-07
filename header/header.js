@@ -1,7 +1,7 @@
 let header = `<nav class="navbar navbar-expand-sm navbar-light">
 <div class="logo navbar-brand">
     <a href="./index.html">
-        <img class="header-logo" height="40" alt="Boo">
+        <img class="header-logo" height="40">
     </a>
 </div> 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@ let header = `<nav class="navbar navbar-expand-sm navbar-light">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 `
 $( document ).ready(function() {
-    let randomise = Math.floor(Math.random() * (27 - 1)) + 1; 
+    let randomise = Math.floor(Math.random() * (30 - 1)) + 1; 
     $('.header-logo').attr('src',`./images/emojis/${randomise}.png`)
 })
 
