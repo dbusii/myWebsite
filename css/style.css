@@ -23,7 +23,9 @@ body{
 	cursor: default;
 	}
 
-
+h1{
+	color:#212529;
+}
 
 a{
 	text-decoration: none !important;
