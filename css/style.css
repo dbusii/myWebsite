@@ -23,13 +23,10 @@ body{
 	cursor: default;
 	}
 
-h1{
-	color:#212529;
-}
 
 a{
 	text-decoration: none !important;
-	color: black !important;
+	color: #212529;
 }
 a:hover{
 	color: #428bca !important;
