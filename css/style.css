@@ -7,7 +7,7 @@
 	min-height: 90vh;
 }
 
-/*Index Page container*/
+/*Index Page containerDes*/
 .indexContainer {
 
 	align-self:center;
@@ -24,10 +24,9 @@ body{
 	}
 
 
-
 a{
 	text-decoration: none !important;
-	color: black !important;
+	color: #212529 !important;
 }
 a:hover{
 	color: #428bca !important;
@@ -96,7 +95,7 @@ span[copyEmail]:hover::after {
 
 /*Grid settings for Design layout - Desktop*/
 @media screen and (min-width: 600px) {
-	.container {
+	.containerDes {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 
@@ -107,7 +106,7 @@ span[copyEmail]:hover::after {
 
 /*Grid settings for Design layout - Mobile*/
 @media screen and (max-width: 599px) {
-.container {
+.containerDes {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	margin: 0 4vw 0 4vw;
@@ -116,12 +115,12 @@ span[copyEmail]:hover::after {
 /*End of grid settings for Design layout - Mobile*/
 
 
-.container div {
+.containerDes div {
 margin: 2vw;
 border: 1px white solid;
 }
 
-.container > div > img {
+.containerDes > div > img {
 width: 100%;
 height: 100%;
 object-fit: cover;
@@ -130,7 +129,7 @@ object-fit: cover;
 
 /*
 currently not using iframes but will be usefull when I decide to implement the projects page. 
-.container > div > iframe {
+.containerDes > div > iframe {
 min-height: 500px;
 height: 100%;
 width: 100%;
