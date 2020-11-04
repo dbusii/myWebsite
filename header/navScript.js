@@ -21,7 +21,6 @@ class CharGen {
 		}
 
 		if (document.getElementById(`${this.docElement}`).innerHTML == null ){
-			console.log('fart')
 			clearInterval(this.timer);
 	 	}
 	}
@@ -39,6 +38,15 @@ let GithubTGen = new CharGen('githubThirdLetter', 't')
 let GithubHGen = new CharGen('githubFourthLetter', 'h')
 let GithubUGen = new CharGen('githubFifthLetter', 'u')
 let GithubBGen = new CharGen('githubSixthLetter', 'b')
+
+let projectsPGen = new CharGen('projectsFirstLetter', 'p' , true)
+let projectsRGen = new CharGen('projectsSecondLetter', 'r')
+let projectsOGen = new CharGen('projectsThirdLetter', 'o')
+let projectsJGen = new CharGen('projectsFourthLetter', 'j')
+let projectsEGen = new CharGen('projectsFifthLetter', 'e')
+let projectsCGen = new CharGen('projectsSixthLetter', 'c')
+let projectsTGen = new CharGen('projectsSeventhLetter', 't')
+let projectsSGen = new CharGen('projectsEightLetter', 's')
 
 let DesignDGen = new CharGen('designFirstLetter', 'd' , true)
 let DesignEGen = new CharGen('designSecondLetter', 'e')

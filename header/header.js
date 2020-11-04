@@ -18,15 +18,17 @@ let header = `<nav class="navbar navbar-expand-sm navbar-light">
             --><p class="about" id="aboutFifthLetter">o</p>
         </a>			 
     </div>
-    <div class="myNav" id="myGit"> 
-        <a href="https://github.com/dbusii/" class="nav-item nav-link" rel="noreferrer" target="_blank">
-            <p class="github" id="githubFirstLetter">h</p><!-- 
-            --><p class="github" id="githubSecondLetter">e</p><!-- 
-            --><p class="github" id="githubThirdLetter">l</p><!-- 
-            --><p class="github" id="githubFourthLetter">l</p><!--
-            --><p class="github" id="githubFifthLetter">o</p><!-- 
-            --><p class="github" id="githubSixthLetter">!</p> 	
-        </a>			 
+    <div class="myNav" id="myProject">  
+    <a href="projects.html" class="nav-item nav-link">
+    <p class="projects" id="projectsFirstLetter">h</p><!-- 
+        --><p class="projects" id="projectsSecondLetter">e</p><!-- 
+        --><p class="projects" id="projectsThirdLetter">l</p><!-- 
+        --><p class="projects" id="projectsFourthLetter">l</p><!-- 
+        --><p class="projects" id="projectsFifthLetter">o</p><!-- 
+        --><p class="projects" id="projectsSixthLetter">!</p><!-- 
+        --><p class="projects" id="projectsSeventhLetter">!</p><!-- 
+        --><p class="projects" id="projectsEightLetter">!</p> 
+    </a>
     </div>
     <div class="myNav" id="myDesign">  
         <a href="design.html" class="nav-item nav-link">
@@ -38,7 +40,17 @@ let header = `<nav class="navbar navbar-expand-sm navbar-light">
             --><p class="design" id="designSixthLetter">!</p> 
         </a>
     </div>
-<div class="myNav" id="myContact" onclick="emailScript()">  
+    <div class="myNav" id="myGit"> 
+    <a href="https://github.com/dbusii/" class="nav-item nav-link" rel="noreferrer" target="_blank">
+        <p class="github" id="githubFirstLetter">h</p><!-- 
+        --><p class="github" id="githubSecondLetter">e</p><!-- 
+        --><p class="github" id="githubThirdLetter">l</p><!-- 
+        --><p class="github" id="githubFourthLetter">l</p><!--
+        --><p class="github" id="githubFifthLetter">o</p><!-- 
+        --><p class="github" id="githubSixthLetter">!</p> 	
+    </a>			 
+    </div>
+    <div class="myNav" id="myContact" onclick="emailScript()">  
         <span copyEmail="click to copy email" class="nav-item nav-link">
             <p class="contact" id="contactFirstLetter">h</p><!-- 
             --><p class="contact" id="contactSecondLetter">e</p><!-- 
