@@ -1,0 +1,42 @@
+
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: rgb(10, 10, 10);
+        color: #ffffff; */
+    }
+
+    .leagueHeader, p, textarea, button{
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    p{
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+    .leagueHeader{
+        margin-top:2vh;
+        margin-bottom: 2vh;
+    }
+    textarea{
+        border: 0px;
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 4vh; 
+        background-color: #d1d1d1;
+        text-align: center;
+        font-size: 1rem;
+        }
+    button{
+        border: 0px;
+        padding: 20px 0px;
+        background-color: rgb(125, 90, 234);
+        margin-bottom: 4vh; 
+        font-size: 1rem;
+    }
+    iframe{
+        margin: 0 auto;
+        width: 90vw;
+        height:60vh;
+        display: block;
+        }

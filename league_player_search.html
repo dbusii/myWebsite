@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Player Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/duck.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/league_player_search_style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/navStyle.css">
+   
+</head>
+<body>
+    <div class="header"></div>
+
+    <div id="app">
+        <p>copy and paste the chatbox text, e.g.</p>
+        <p>player 1 joined the lobby
+            player 2 joined the lobby
+            player 3 joined the lobby
+            player 4 joined the lobby
+            player 5 joined the lobby
+        </p>
+        <textarea type="text" v-model='initialInput' placeholder="" ></textarea> 
+
+        <button v-on:click='mainFunction'>submit</button>
+        <h1 class="leagueHeader">Player 1: <a  v-bind:href=" playersOPGG[0] "> {{ players[0] }} </a> </h1>
+        <iframe v-bind:src=" playersOPGG[0] " frameborder="0"></iframe>
+        <h1 class="leagueHeader">Player 2: <a  v-bind:href=" playersOPGG[1] "> {{ players[1] }} </a> </h1>
+        <iframe v-bind:src=" playersOPGG[1] " frameborder="0"></iframe>
+        <h1 class="leagueHeader">Player 3: <a  v-bind:href=" playersOPGG[2] "> {{ players[2] }} </a> </h1>
+        <iframe v-bind:src=" playersOPGG[2] " frameborder="0"></iframe>
+        <h1 class="leagueHeader">Player 4: <a  v-bind:href=" playersOPGG[3] "> {{ players[3] }} </a> </h1>
+        <iframe v-bind:src=" playersOPGG[3] " frameborder="0"></iframe>
+        <h1 class="leagueHeader">Player 5: <a  v-bind:href=" playersOPGG[4] "> {{ players[4] }} </a> </h1>
+        <iframe v-bind:src=" playersOPGG[4] " frameborder="0"></iframe>
+    </div>
+
+    <script src="league_player_search/vue.js"></script>
+    <script src="league_player_search/main.js"></script>
+    <script src="./emailBuilder/jquery-3.4.1.js"></script>
+    <script src="./header/header.js"></script>
+    <script src="./header/navScript.js"></script>
+    <script src="./header/menuScript.js"></script>
+    <script src="./header/emailScript.js"></script>
+</body>
+</html>
