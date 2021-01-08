@@ -6,7 +6,7 @@
         color: #ffffff; */
     }
 
-    .leagueHeader, p, textarea, button{
+    .leagueHeader, p, textarea, .leagueButton{
         display: block;
         width: 90vw;
         margin: 0 auto;
