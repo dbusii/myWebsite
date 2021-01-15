@@ -18,15 +18,17 @@
 /*Index page font stuff*/
 
 /*default font stuff*/
-body{
+html body{
 	font-family: helvetica, sans-serif;
 	cursor: default;
+	background-color: rgb(14, 14, 14);
+	color: #d3d3d3 !important;
 	}
 
 
 a{
 	text-decoration: none !important;
-	color: #212529 !important;
+	color: #d3d3d3 !important;
 }
 a:hover{
 	color: #428bca !important;
@@ -63,31 +65,6 @@ a:hover{
 
 /*END OF INDEX PAGE*/
 
-
-/*Contact cursor*/
-#myContact{
-cursor: copy
-}
-
-/* on hover stuff for Contact copy to clipboard*/
-span[copyEmail] {
-	position: relative;
-	text-decoration: none;
-	cursor: copy;
-}
-	
-span[copyEmail]:hover::after {
-	content: attr(copyEmail);
-	position: absolute;
-	left: -12px;
-	top: 14px;
-	min-width: 200px;
-	padding: 12px;
-	color:black;
-	font-family: helvetica, sans-serif;
-	font-size: 12px;
-	letter-spacing: 1px;
-}
 
 /*END OF NAVIGATION*/
 

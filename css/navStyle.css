@@ -1,17 +1,25 @@
-.about, .github, .design, .contact, .projects {
-    color: black;
+.about, .github, .design, .projects {
     display: inline;
     font-size: 14px;
     font-family: normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
 
 .navbar-nav>.myNav, .logo, .navbar-nav {
     padding-left:20px;
     padding-right:20px;
   }
 
-  .navbar-toggler:focus, .navbar-toggler:active {
-    outline: none;
-    box-shadow: none;
-    border: 0px;
-  }
+.navbar-toggler{
+  color: #d3d3d3 !important;
+}
+
+.navbar-toggler:hover{
+  color: #428bca !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: 0px;
+}

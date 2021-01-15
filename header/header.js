@@ -1,4 +1,4 @@
-let header = `<nav class="navbar navbar-expand-sm navbar-light">
+let header = `<nav class="navbar navbar-expand-sm">
 <div class="logo navbar-brand">
     <a href="./index.html">
         <img class="header-logo" height="40" alt=" ">
@@ -50,6 +50,7 @@ let header = `<nav class="navbar navbar-expand-sm navbar-light">
         --><p class="github" id="githubSixthLetter">!</p> 	
     </a>			 
     </div>
+
   </div>
 </div>
 </nav>
