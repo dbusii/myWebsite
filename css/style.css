@@ -17,13 +17,13 @@
 
 /*Index page font stuff*/
 
-/*default font stuff*/
+/*default stuff*/
 html body{
 	font-family: helvetica, sans-serif;
 	cursor: default;
 	background-color: rgb(14, 14, 14);
 	color: #d3d3d3 !important;
-	}
+}
 
 
 a{

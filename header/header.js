@@ -30,16 +30,7 @@ let header = `<nav class="navbar navbar-expand-sm">
         --><p class="projects" id="projectsEightLetter">!</p> 
     </a>
     </div>
-    <div class="myNav" id="myDesign">  
-        <a href="design.html" class="nav-item nav-link">
-            <p class="design" id="designFirstLetter">h</p><!-- 
-            --><p class="design" id="designSecondLetter">e</p><!-- 
-            --><p class="design" id="designThirdLetter">l</p><!-- 
-            --><p class="design" id="designFourthLetter">l</p><!-- 
-            --><p class="design" id="designFifthLetter">o</p><!-- 
-            --><p class="design" id="designSixthLetter">!</p> 
-        </a>
-    </div>
+
     <div class="myNav" id="myGit"> 
     <a href="https://github.com/dbusii/" class="nav-item nav-link" rel="noreferrer" target="_blank">
         <p class="github" id="githubFirstLetter">h</p><!-- 
