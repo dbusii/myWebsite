@@ -50,17 +50,6 @@ let header = `<nav class="navbar navbar-expand-sm navbar-light">
         --><p class="github" id="githubSixthLetter">!</p> 	
     </a>			 
     </div>
-    <div class="myNav" id="myContact" onclick="emailScript()">  
-        <span copyEmail="click to copy email" class="nav-item nav-link">
-            <p class="contact" id="contactFirstLetter">h</p><!-- 
-            --><p class="contact" id="contactSecondLetter">e</p><!-- 
-            --><p class="contact" id="contactThirdLetter">l</p><!-- 
-            --><p class="contact" id="contactFourthLetter">l</p><!-- 
-            --><p class="contact" id="contactFifthLetter">o</p><!-- 
-            --><p class="contact" id="contactSixthLetter">!</p><!-- 
-            --><p class="contact" id="contactSeventhLetter"></p> 
-        </span>
-    </div> 
   </div>
 </div>
 </nav>
