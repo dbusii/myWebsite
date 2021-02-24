@@ -21,7 +21,9 @@ input[type=number] {
 .input-group{
     margin: auto;
     position: absolute;
-    width: 600px;
+    max-width: 640px;
+    min-width: 400px;
+    padding: 40px;
     height: 200px;
     top: 0; 
     left: 0; 
