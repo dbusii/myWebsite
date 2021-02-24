@@ -23,7 +23,7 @@ input[type=number] {
     position: absolute;
     max-width: 640px;
     min-width: 400px;
-    padding: 40px;
+    padding: 0 40px;
     height: 200px;
     top: 0; 
     left: 0; 
