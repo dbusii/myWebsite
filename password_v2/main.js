@@ -190,7 +190,7 @@ const app = new Vue({
         password : true
       },
       attribute : {
-        length : 12,
+        length : 16,
         uppercase : true,
         lowercase : true,
         special : true,
